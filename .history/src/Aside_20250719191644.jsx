@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import data from './data.js';
+import {data} from './data.js';
 import './Aside.css';
 
 export default function Aside() {

@@ -63,7 +63,7 @@ export default function Aside() {
               {data.menuItems.map((section, index) => (
                 <div key={section.section || index}>
                   {renderMenuSection(section)}
-                  {index < data.menuItems.length - 1 && <div className="stick"></div>}
+                  {index < menuItems.length - 1 && <div className="stick"></div>}
                 </div>
               ))}
             </ul>

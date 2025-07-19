@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import data from './data.js';
+import data, {menuItems} from './data.js';
 import './Aside.css';
 
 export default function Aside() {
@@ -60,10 +60,10 @@ export default function Aside() {
         <div className="navbar-menu-1">
           <nav className="navbar">
             <ul className="ul_main">
-              {data.menuItems.map((section, index) => (
+              {menuItems.map((section, index) => (
                 <div key={section.section || index}>
                   {renderMenuSection(section)}
-                  {index < data.menuItems.length - 1 && <div className="stick"></div>}
+                  {index < menuItems.length - 1 && <div className="stick"></div>}
                 </div>
               ))}
             </ul>

@@ -20,9 +20,9 @@ export default function Aside() {
   }, []);
 
   const renderMenuSection = (section) => (
-    <div className="aside-section" key={section.section}>
-      {section.title && <p>{section.title}</p>}
-      {section.items.map((item) => {
+    <div className="aside-section" key={data.section.section}>
+      {data.section.title && <p>{section.title}</p>}
+      {data.section.items.map((item) => {
         const isActive = activeItem === item.id;
         const iconPath = `/images/${item.icon}-icon-${isActive ? 'white' : 'black'}.png`;
 
@@ -63,7 +63,7 @@ export default function Aside() {
               {data.menuItems.map((section, index) => (
                 <div key={section.section || index}>
                   {renderMenuSection(section)}
-                  {index < data.menuItems.length - 1 && <div className="stick"></div>}
+                  {index < menuItems.length - 1 && <div className="stick"></div>}
                 </div>
               ))}
             </ul>

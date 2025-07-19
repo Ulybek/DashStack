@@ -10,17 +10,12 @@ export default function Primary_Section_1() {
             <div className='total-objects'>
                 {data.total_objects.map((items) => (
                     <div className="card" key={items.id}>
-                        <div className='upper-card'>
+                        <div className=''>
                             <div className='text-box'>
                                 <h4>{items.label}</h4>
                                 <h2>{items.number}</h2>
                             </div>
-                            <img src={items.iconImg} alt={items.label} />
-                        </div>
-                        <div className='down-card'>
-                        <img src={items.pathImg} alt="" />
-                        <span>{items.percent}</span>
-                        <p>{items.action}</p>
+                            <img src={items.img} alt={items.label} />
                         </div>
                     </div>
                 ))}
