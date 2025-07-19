@@ -1,0 +1,75 @@
+.navbar-menu-1 {
+    border-right: solid rgba(224, 224, 224, 1) 1px;
+}
+
+.outer-block-navbar .logo-heading {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.outer-block-navbar .logo-heading h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+}
+
+.ul_main {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(40px, auto));
+    gap: 10px;
+}
+
+.ul_main li {
+    list-style: none;
+}
+
+.ul_main a {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    padding: 9px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.ul_main a:hover {
+    background-color: #3986FB;
+    color: white;
+}
+
+.ul_main a img {
+    width: 20px;
+}
+
+.ul_main a h4{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+}
+
+.ul_main li .image-box {
+    display: flex;
+    align-items: center;
+}
+
+.ul_main .stick {
+    border: solid rgba(224, 224, 224, 1) 0.5px;
+}
+
+.aside-section {
+    padding: 0 15px;
+}
+
+.aside-section p {
+    font-size: 12px;
+    padding: 5px 0 10px 10px;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype');
+    font-weight: 200 1000;
+    font-style: normal;
+  }
+  
