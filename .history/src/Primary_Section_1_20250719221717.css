@@ -16,7 +16,7 @@
 .total-objects{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30px, auto));
-    gap: 15px;
+    gap: 10px;
 }
 
 .total-objects .card {

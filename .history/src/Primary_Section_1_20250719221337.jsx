@@ -27,8 +27,6 @@ export default function Primary_Section_1() {
                     </div>
                 ))}
             </div>
-            <div className='graph-box'> 
-            </div>
         </section>
 
 

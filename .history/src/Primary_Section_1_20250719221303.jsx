@@ -19,15 +19,13 @@ export default function Primary_Section_1() {
                         </div>
                         <div className='down-card'>
                             <img src={items.pathImg} alt="" />
-                            <span style={{ color: items.pathImg.includes('down') ? '#FF4C61' : '#1CC88A'}}>
+                            <span style={{ color: items.pathImg.includes('down') ? '#FF4C61' : '#1CC88A', fontWeight: 600 }}>
                                 {items.percent}
                             </span>
                             <p>{items.action}</p>
                         </div>
                     </div>
                 ))}
-            </div>
-            <div className='graph-box'> 
             </div>
         </section>
 

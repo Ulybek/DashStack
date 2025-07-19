@@ -10,17 +10,16 @@
     font-weight: 600;
     letter-spacing: 0.2px;
     color: rgba(32, 34, 36, 1);
-    margin-bottom: 25px;
 }
 
 .total-objects{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30px, auto));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(20px, auto));
+    gap: 20px;
 }
 
 .total-objects .card {
-    width: 18.5vw;
+    width: 18vw;
     height: 160px;
     background-color: white;
     border-radius: 15px;
@@ -42,7 +41,7 @@
 }
 
 .total-objects .card .upper-card .text-box h4{
-    font-size: 16px;
+    font-size: 16.5px;
     font-weight: 400;
     color: rgb(60, 60, 60);
 }
@@ -58,7 +57,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .total-objects .card .down-card img {
@@ -67,10 +66,4 @@
 
 .total-objects .card .down-card span{
     color: rgba(0, 182, 155, 1);
-    font-weight: 600;
-}
-
-.total-objects .card .down-card p{
-    color: rgb(60, 60, 60);
-    font-weight: 400;
 }

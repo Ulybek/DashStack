@@ -1,0 +1,35 @@
+.primary-section-1 {
+    background-color: #F2F2F2;
+    height: 100%;
+    padding: 30px 25px;
+}
+
+.primary-section-1 .title-box h3 {
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: rgba(32, 34, 36, 1);
+}
+
+.total-objects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, auto));
+    gap: 20px;
+}
+
+.total-objects .card {
+    width: 10vw;
+    height: 160px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.total-objects .card .upper-card img {
+    width: 20px;
+}
+
+.total-objects .card .down-card img {
+    width: 20px;
+}
