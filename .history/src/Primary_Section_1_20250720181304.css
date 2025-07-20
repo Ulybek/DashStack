@@ -1,0 +1,221 @@
+.primary-section-1 {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(20px, auto));
+    background-color: #F2F2F2;
+    height: 100%;
+    padding: 30px 25px;
+}
+
+.primary-section-1 .title-box h3 {
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: rgba(32, 34, 36, 1);
+}
+
+.total-objects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, auto));
+    gap: 20px;
+}
+
+.total-objects .card {
+    width: 19vw;
+    height: 160px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    font-family: 'Nunito Sans';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.total-objects .card .upper-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.total-objects .card .upper-card img {
+    width: 60px;
+}
+
+.total-objects .card .upper-card .text-box h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(60, 60, 60);
+}
+
+.total-objects .card .upper-card .text-box h2 {
+    padding-top: 15px;
+    font-size: 27px;
+    font-weight: 700;
+    color: rgb(60, 60, 60);
+}
+
+.total-objects .card .down-card {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+}
+
+.total-objects .card .down-card img {
+    width: 25px;
+}
+
+.total-objects .card .down-card span {
+    color: rgba(0, 182, 155, 1);
+    font-weight: 600;
+}
+
+.total-objects .card .down-card p {
+    color: rgb(60, 60, 60);
+    font-weight: 400;
+}
+
+.chart-container {
+    font-family: 'Nunito Sans';
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px;
+    height: 440px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.recharts-responsive-container {
+    padding: 0 20px 30px 20px;
+}
+
+.sales-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.sales-header h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(32, 34, 36, 1);
+    padding-left: 20px;
+}
+
+.select-button {
+    margin-right: 24px;
+    font-family: 'Nunito Sans';
+    color: rgba(43, 48, 52, 0.4);
+}
+
+.select-wrapper {
+    position: relative;
+    width: fit-content;
+}
+
+.select-button {
+    padding: 6px 20px 6px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    cursor: pointer;
+    appearance: none;
+}
+
+.select-arrow {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 9px;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.deals-container {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+    font-family: 'Nunito Sans';
+}
+
+.deals-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.deals-header h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.deals-container .select-button {
+    margin: 0;
+}
+
+.deals-container .select-arrow {
+    right: 17px;
+}
+
+.deals-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.deals-table thead {
+    background-color: #f5f8fc;
+}
+
+.deals-table thead th:first-child {
+    border-top-left-radius: 12px;
+}
+
+.deals-table thead th:last-child {
+    border-top-right-radius: 12px;
+}
+
+
+
+.deals-table th,
+.deals-table td {
+    padding: 16px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+}
+
+.deals-table td {
+    font-weight: 350;
+    color: rgb(60, 60, 60);
+}
+
+.product-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.product-cell img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+}
+
+.status.delivered {
+    background-color: #00b894;
+}
