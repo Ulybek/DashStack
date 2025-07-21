@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer, Area, AreaChart } from 'recharts';
+import { XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer, Area, AreaChart } from 'recharts';
 import data from './data.js';
-import './Primary_Section_1.css';
+import './Dashboard.css';
 
-export default function Primary_Section_1() {
+export default function Dashboard() {
     const [selectedMonth, setSelectedMonth] = useState('October');
     return (
         <section className='primary-section-1'>

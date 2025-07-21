@@ -1,0 +1,32 @@
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Header from './Header.jsx';
+import './Header.css';
+import './Main.css';
+import Dashboard from './pages/Dashboard.jsx';
+import Products from './pages/Products.jsx';
+import Favorites from './pages/Favorites.jsx';
+import OrderLists from './pages/OrderLists.jsx';
+import ProductStock from './pages/ProductStock.jsx';
+import Pricing from './pages/Pricing.jsx';
+import Calendar from './pages/Calendar.jsx';
+import Settings from './pages/Settings.jsx';
+
+export default function Main() {
+    return (
+        <main className='main'>
+            <Header />
+            <Routes>
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/favorites" element={<Favorites />} />
+                <Route path="/orderlists" element={<OrderLists />} />
+                <Route path="/productstock" element={<ProductStock />} />
+                <Route path="/pricing" element={<Pricing />} />
+                <Route path="/calendar" element={<Calendar />} />
+                <Route path="/" element={<OrderLists />} />
+                <Route path="/settings" element={<Settings />} />
+            </Routes>
+        </main>
+    );
+}

@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide": "^4.1.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-router-dom": "^7.7.0",
     "recharts": "^3.1.0"
   },
   "devDependencies": {
