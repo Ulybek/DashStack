@@ -1,0 +1,83 @@
+.orderlists-section {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(40px, auto));
+    background-color: #F2F2F2;
+    padding: 30px 25px;
+    height: 100%;
+    font-family: 'Nunito Sans';
+}
+
+.orderlists-section .title-box h3 {
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: rgba(32, 34, 36, 1);
+}
+
+.title-box h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.menu-order {
+    margin-bottom: 12px;
+}
+
+.image-box img {
+    width: 24px;
+    height: 24px;
+}
+
+.filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: white;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    font-size: 14px;
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 16px;
+    border-right: 1px solid #ddd;
+}
+
+.filter-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.dropdown-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.reset-button {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #e91e63;
+    font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    text-decoration: underline;
+}
+
+.reset-icon {
+    width: 16px;
+    height: 16px;
+}
