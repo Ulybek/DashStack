@@ -6,6 +6,7 @@ const data = {
         { id: "dashboard", label: "Dashboard", icon: "dashboard", path: '/dashboard' },
         { id: "products", label: "Products", icon: "products", path: '/products' },
         { id: "favorites", label: "Favorites", icon: "favorites", path: '/favorites' },
+        { id: "inbox", label: "Inbox", icon: "inbox", path: 'inbox' },
         { id: "orderlists", label: "Order Lists", icon: "orderlists", path: '/orderlists' },
         { id: "productstock", label: "Product Stock", icon: "productstock", path: '/productstock' },
       ],
@@ -168,7 +169,7 @@ const data = {
       reviews: 89,
     }
   ],
-  favorites: [
+  favourites: [
     {
       id: 1,
       image: '/images/favapplewatch.png',
@@ -211,54 +212,6 @@ const data = {
     },
     {
       id: 6,
-      image: '/images/favapplewatch.png',
-      title: 'Xiaomi Watch S1',
-      price: '$70.00',
-      rating: 3,
-      reviews: 63,
-    },
-    {
-      id: 7,
-      image: '/images/favapplewatch.png',
-      title: 'Apple Watch Series 4',
-      price: '$120.00',
-      rating: 4,
-      reviews: 131,
-    },
-    {
-      id: 8,
-      image: '/images/favapplewatch.png',
-      title: 'Samsung Galaxy Watch',
-      price: '$99.00',
-      rating: 5,
-      reviews: 89,
-    },
-    {
-      id: 9,
-      image: '/images/favapplewatch.png',
-      title: 'Fitbit Versa 3',
-      price: '$140.00',
-      rating: 3,
-      reviews: 56,
-    },
-    {
-      id: 10,
-      image: '/images/favapplewatch.png',
-      title: 'Garmin Venu Sq',
-      price: '$110.00',
-      rating: 4,
-      reviews: 78,
-    },
-    {
-      id: 11,
-      image: '/images/favapplewatch.png',
-      title: 'Huawei Watch GT',
-      price: '$89.00',
-      rating: 4,
-      reviews: 102,
-    },
-    {
-      id: 12,
       image: '/images/favapplewatch.png',
       title: 'Xiaomi Watch S1',
       price: '$70.00',

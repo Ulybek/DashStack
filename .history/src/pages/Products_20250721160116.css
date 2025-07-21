@@ -1,9 +1,9 @@
 .products-section {
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(40px, auto));
+    grid-template-rows: repeat(auto-fit, minmax(30px, auto));
     background-color: #F2F2F2;
     padding: 30px 25px;
-    height: 100%;
+    
     font-family: 'Nunito Sans';
 }
 
@@ -208,7 +208,7 @@
 
 .product-carousel-wrapper .splide__arrows {
     position: relative;
-    top: 160px;
+    top: 155px;
 }
 
 .product-carousel-wrapper .splide__arrow:disabled {

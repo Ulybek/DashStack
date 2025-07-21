@@ -5,7 +5,7 @@ import '/src/pages/Favorites.css'
 import data from '/src/data.js';
 
 export default function Favorites() {
-    const groupSize = 2;
+    const groupSize = 3;
     const groupedFavourites = [];
 
     for (let i = 0; i < data.favorites.length; i += groupSize) {

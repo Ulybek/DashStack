@@ -6,6 +6,7 @@ const data = {
         { id: "dashboard", label: "Dashboard", icon: "dashboard", path: '/dashboard' },
         { id: "products", label: "Products", icon: "products", path: '/products' },
         { id: "favorites", label: "Favorites", icon: "favorites", path: '/favorites' },
+        { id: "inbox", label: "Inbox", icon: "inbox", path: 'inbox' },
         { id: "orderlists", label: "Order Lists", icon: "orderlists", path: '/orderlists' },
         { id: "productstock", label: "Product Stock", icon: "productstock", path: '/productstock' },
       ],

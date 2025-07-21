@@ -5,7 +5,7 @@ import '/src/pages/Favorites.css'
 import data from '/src/data.js';
 
 export default function Favorites() {
-    const groupSize = 2;
+    const groupSize = 1;
     const groupedFavourites = [];
 
     for (let i = 0; i < data.favorites.length; i += groupSize) {
@@ -14,7 +14,7 @@ export default function Favorites() {
     return (
         <div className='favorite-section'>
             <div className='title-box'><h3>Favorites</h3></div>
-            <div className="favorite-carousel-wrapper">
+            <div className=".favorite-carousel-wrapper">
 
                 {groupedFavourites.map((group, index) => (
                     <Splide

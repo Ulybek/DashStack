@@ -1,0 +1,18 @@
+.favorite-section{
+    background-color: #F2F2F2;
+    padding: 30px 25px;
+    height: 100%;
+}
+
+.favorite-section .title-box h3 {
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: rgba(32, 34, 36, 1);
+}
+.product-carousel-wrapper {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(20px, 1fr));
+    gap: 25px;
+}

@@ -1,22 +1,24 @@
 import React from 'react';
+import data from '/src/data.js';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import '/src/pages/Favorites.css'
-import data from '/src/data.js';
 
 export default function Favorites() {
-    const groupSize = 2;
-    const groupedFavourites = [];
 
-    for (let i = 0; i < data.favorites.length; i += groupSize) {
-        groupedFavourites.push(data.favorites.slice(i, i + groupSize));
+    const groupSize = 3;
+    const groupedProducts = [];
+
+    for (let i = 0; i < data.products.length; i += groupSize) {
+        groupedProducts.push(data.products.slice(i, i + groupSize));
     }
+    
     return (
         <div className='favorite-section'>
-            <div className='title-box'><h3>Favorites</h3></div>
-            <div className="favorite-carousel-wrapper">
+            <div className='title-box'><h3>Products</h3></div>
+            <div className="product-carousel-wrapper">
 
-                {groupedFavourites.map((group, index) => (
+                {groupedProducts.map((group, index) => (
                     <Splide
                         key={index}
                         options={{
