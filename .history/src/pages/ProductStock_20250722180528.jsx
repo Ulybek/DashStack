@@ -44,17 +44,17 @@ export default function ProductStock() {
                 <table className="orders-table">
                     <thead className="orders-table__head">
                         <tr>
-                            <th className="orders-table__header">Image</th>
-                            <th className="orders-table__header" >Product Name</th>
-                            <th className="orders-table__header">Category</th>
-                            <th className="orders-table__header">Price</th>
-                            <th className="orders-table__header">Piece</th>
-                            <th className="orders-table__header">Available Color</th>
-                            <th className="orders-table__header">Action</th>
+                            <th>Image</th>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Piece</th>
+                            <th>Available Color</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {currentProducts.map((product, index) => (
+                        {filteredProducts.map((product, index) => (
                             <tr key={index} className="orders-table__row">
                                 <td className="orders-table__cell">
                                     <img className='image-productstock' src={product.image} alt={product.name} />
@@ -89,7 +89,7 @@ export default function ProductStock() {
                                 </td>
                             </tr>
                         ))}
-                        {currentProducts.length === 0 && (
+                        {filteredProducts.length === 0 && (
                             <tr>
                                 <td colSpan="7" style={{ textAlign: 'center', padding: '20px', color: '#888' }}>
                                     No products found

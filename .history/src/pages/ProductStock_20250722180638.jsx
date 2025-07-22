@@ -54,7 +54,7 @@ export default function ProductStock() {
                         </tr>
                     </thead>
                     <tbody>
-                        {currentProducts.map((product, index) => (
+                        {filteredProducts.map((product, index) => (
                             <tr key={index} className="orders-table__row">
                                 <td className="orders-table__cell">
                                     <img className='image-productstock' src={product.image} alt={product.name} />
@@ -89,7 +89,7 @@ export default function ProductStock() {
                                 </td>
                             </tr>
                         ))}
-                        {currentProducts.length === 0 && (
+                        {filteredProducts.length === 0 && (
                             <tr>
                                 <td colSpan="7" style={{ textAlign: 'center', padding: '20px', color: '#888' }}>
                                     No products found

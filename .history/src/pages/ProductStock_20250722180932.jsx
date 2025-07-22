@@ -7,7 +7,7 @@ import "react-paginate/theme/basic/react-paginate.css";
 export default function ProductStock() {
     const [searchTerm, setSearchTerm] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
-    const rowsPerPage = 5;
+    const rowsPerPage = 10;
 
     // Фильтруем продукты
     const filteredProducts = data.product_stock.filter(product =>

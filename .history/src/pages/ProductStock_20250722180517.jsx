@@ -44,13 +44,13 @@ export default function ProductStock() {
                 <table className="orders-table">
                     <thead className="orders-table__head">
                         <tr>
-                            <th className="orders-table__header">Image</th>
-                            <th className="orders-table__header" >Product Name</th>
-                            <th className="orders-table__header">Category</th>
-                            <th className="orders-table__header">Price</th>
-                            <th className="orders-table__header">Piece</th>
-                            <th className="orders-table__header">Available Color</th>
-                            <th className="orders-table__header">Action</th>
+                            <th>Image</th>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Piece</th>
+                            <th>Available Color</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -59,11 +59,11 @@ export default function ProductStock() {
                                 <td className="orders-table__cell">
                                     <img className='image-productstock' src={product.image} alt={product.name} />
                                 </td>
-                                <td className="orders-table__cell">{product.name}</td>
-                                <td className="orders-table__cell">{product.category}</td>
-                                <td className="orders-table__cell">${product.price.toFixed(2)}</td>
-                                <td className="orders-table__cell">{product.piece}</td>
-                                <td className="orders-table__cell">
+                                <td>{product.name}</td>
+                                <td>{product.category}</td>
+                                <td>${product.price.toFixed(2)}</td>
+                                <td>{product.piece}</td>
+                                <td>
                                     <div style={{ display: 'flex', gap: '8px' }}>
                                         {product.colors.map((color, i) => (
                                             <span key={i} style={{
@@ -76,7 +76,7 @@ export default function ProductStock() {
                                         ))}
                                     </div>
                                 </td>
-                                <td className="orders-table__cell">
+                                <td>
                                     <div className='setting-box'>
                                         <button className='setting-btn'>
                                             <img src="/images/pencil-write.png" alt="edit" />

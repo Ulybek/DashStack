@@ -287,7 +287,7 @@ const data = {
     { id: "00018", name: "Ethan Price", address: "982 Spruce Trail", date: "05 Jul 2019", type: "Medicine", status: "In Transit" },
     { id: "00019", name: "Clara Hughes", address: "401 Redwood Drive", date: "29 Aug 2019", type: "Mobile", status: "Processing" }
   ],
-  product_stock: [
+   product_stock: [
     {
       image: "/images/applewatchseries4.png",
       name: "Apple Watch Series 4",
@@ -374,8 +374,7 @@ const data = {
       price: 640,
       piece: 635,
       colors: ["#800020", "#87CEEB", "#0000FF"]
-    },
-    {
+    }, {
       id: 9,
       image: "/images/microsoftheadphones.png",
       name: "Microsoft Headsquare",

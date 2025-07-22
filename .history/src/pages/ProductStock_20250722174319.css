@@ -66,10 +66,6 @@
     border-collapse: collapse;
 }
 
-.image-productstock {
-    width: 60px;
-}
-
 .orders-table__header {
     text-align: left;
     padding: 12px 30px;
@@ -87,78 +83,21 @@
     padding: 20px 30px;
 }
 
-.orders-table__cell .setting-box {
+.orders-table__cell .setting-box{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    height: 35px;
-    width: 90px;
-}
-
-.setting-box .stick {
-    width: 1px;
-    background-color: rgba(200, 200, 200, 1);
-    height: 100%;
-}
-
-.setting-btn {
-    flex: 1;
-    height: 100%;
-    border: none;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    padding: 0;
-}
-
-.setting-btn img {
-    width: 16px;
-    height: 16px;
-}
-
-.pagination {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
     gap: 10px;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(250, 251, 253, 1);
+    border: 1px solid rgba(213, 213, 213, 1);
+    border-radius: 10px;
 }
 
-.pagination-info {
-    font-size: 15px;
-    color: rgb(121, 121, 121);
-    position: relative;
-    top: 25px;
+.setting-box .stick{
+    border: 1px thin rgba(151, 151, 151, 1);
 }
 
-.page-item {
-    padding: 6px 12px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    font-size: 14px;
-    background-color: #f9f9f9;
-    transition: all 0.2s;
-    position: relative;
-    bottom: 5px;
-}
+.setting-button{
+    width: 20px;
 
-.page-item:hover {
-    background-color: #e0e0e0;
-}
-
-.active {
-    background-color: #3f51b5;
-    color: white;
-    border-color: #3f51b5;
-}
-
-.disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
 }

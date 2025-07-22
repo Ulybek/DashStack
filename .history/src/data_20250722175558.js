@@ -287,7 +287,7 @@ const data = {
     { id: "00018", name: "Ethan Price", address: "982 Spruce Trail", date: "05 Jul 2019", type: "Medicine", status: "In Transit" },
     { id: "00019", name: "Clara Hughes", address: "401 Redwood Drive", date: "29 Aug 2019", type: "Mobile", status: "Processing" }
   ],
-  product_stock: [
+   product_stock: [
     {
       image: "/images/applewatchseries4.png",
       name: "Apple Watch Series 4",
@@ -314,7 +314,7 @@ const data = {
     },
     {
       id: 4,
-      image: "/images/samsunga50.png",
+      image: "/images/ssamsunga50.png",
       name: "Samsung A50",
       category: "Mobile",
       price: 400,
@@ -341,51 +341,6 @@ const data = {
     },
     {
       id: 7,
-      image: "/images/womendress.png",
-      name: "Women's Dress",
-      category: "Fashion",
-      price: 640,
-      piece: 635,
-      colors: ["#800020", "#87CEEB", "#0000FF"]
-    },
-    {
-      id: 8,
-      image: "/images/camera.png",
-      name: "Camera",
-      category: "Electronic",
-      price: 420,
-      piece: 52,
-      colors: ["#000080", "#800020", "#FF0000"]
-    },
-    {
-      id: 9,
-      image: "/images/microsoftheadphones.png",
-      name: "Microsoft Headsquare",
-      category: "Digital Product",
-      price: 190,
-      piece: 13,
-      colors: ["#000000", "#FF99CC", "#6699FF", "#FFD700"]
-    },
-    {
-      id: 10,
-      image: "/images/womendress.png",
-      name: "Women's Dress",
-      category: "Fashion",
-      price: 640,
-      piece: 635,
-      colors: ["#800020", "#87CEEB", "#0000FF"]
-    },
-    {
-      id: 9,
-      image: "/images/microsoftheadphones.png",
-      name: "Microsoft Headsquare",
-      category: "Digital Product",
-      price: 190,
-      piece: 13,
-      colors: ["#000000", "#FF99CC", "#6699FF", "#FFD700"]
-    },
-    {
-      id: 10,
       image: "/images/womendress.png",
       name: "Women's Dress",
       category: "Fashion",

@@ -6,21 +6,10 @@ import "react-paginate/theme/basic/react-paginate.css";
 
 export default function ProductStock() {
     const [searchTerm, setSearchTerm] = useState("");
-    const [currentPage, setCurrentPage] = useState(1);
-    const rowsPerPage = 5;
 
-    // Фильтруем продукты
     const filteredProducts = data.product_stock.filter(product =>
         product.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
-
-    // Пагинация
-    const totalPages = Math.ceil(filteredProducts.length / rowsPerPage);
-    const startIndex = (currentPage - 1) * rowsPerPage;
-    const currentProducts = filteredProducts.slice(startIndex, startIndex + rowsPerPage);
-
-    const showingFrom = filteredProducts.length === 0 ? 0 : startIndex + 1;
-    const showingTo = Math.min(startIndex + rowsPerPage, filteredProducts.length);
 
     return (
         <div className='productstock-section'>
@@ -33,10 +22,7 @@ export default function ProductStock() {
                         type="text"
                         placeholder="Search product name"
                         value={searchTerm}
-                        onChange={(e) => {
-                            setSearchTerm(e.target.value);
-                            setCurrentPage(1); // сбрасываем на первую страницу при поиске
-                        }}
+                        onChange={(e) => setSearchTerm(e.target.value)}
                     />
                 </div>
             </div>
@@ -45,7 +31,7 @@ export default function ProductStock() {
                     <thead className="orders-table__head">
                         <tr>
                             <th className="orders-table__header">Image</th>
-                            <th className="orders-table__header" >Product Name</th>
+                            <th className="orders-table__header">Product Name</th>
                             <th className="orders-table__header">Category</th>
                             <th className="orders-table__header">Price</th>
                             <th className="orders-table__header">Piece</th>
@@ -54,7 +40,7 @@ export default function ProductStock() {
                         </tr>
                     </thead>
                     <tbody>
-                        {currentProducts.map((product, index) => (
+                        {filteredProducts.map((product, index) => (
                             <tr key={index} className="orders-table__row">
                                 <td className="orders-table__cell">
                                     <img className='image-productstock' src={product.image} alt={product.name} />
@@ -89,7 +75,7 @@ export default function ProductStock() {
                                 </td>
                             </tr>
                         ))}
-                        {currentProducts.length === 0 && (
+                        {filteredProducts.length === 0 && (
                             <tr>
                                 <td colSpan="7" style={{ textAlign: 'center', padding: '20px', color: '#888' }}>
                                     No products found
@@ -98,32 +84,6 @@ export default function ProductStock() {
                         )}
                     </tbody>
                 </table>
-            </div>
-
-            {/* Пагинация */}
-            <div className="pagination-wrapper">
-                <div className="pagination-info">
-                    Showing {showingFrom}–{showingTo} of {filteredProducts.length}
-                </div>
-                {totalPages > 1 && (
-                    <ReactPaginate
-                        previousLabel={"←"}
-                        nextLabel={"→"}
-                        breakLabel={"..."}
-                        pageCount={totalPages}
-                        marginPagesDisplayed={1}
-                        pageRangeDisplayed={3}
-                        onPageChange={({ selected }) => setCurrentPage(selected + 1)}
-                        containerClassName={"pagination"}
-                        activeClassName={"active"}
-                        previousClassName={"page-item"}
-                        nextClassName={"page-item"}
-                        pageClassName={"page-item"}
-                        breakClassName={"page-item"}
-                        disabledClassName={"disabled"}
-                        forcePage={currentPage - 1}
-                    />
-                )}
             </div>
         </div>
     );
