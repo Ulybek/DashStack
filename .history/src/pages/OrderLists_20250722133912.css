@@ -1,0 +1,338 @@
+.orderlists-section {
+    background-color: #F2F2F2;
+    padding: 30px 25px;
+    height: 100%;
+    font-family: 'Nunito Sans';
+}
+
+.orderlists-section .title-box h3 {
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: rgba(32, 34, 36, 1);
+}
+
+.title-box h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.menu-order {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.filter-table {
+    width: auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.filter-table tr {
+    display: flex;
+    border-radius: 12px;
+    border: 1px solid rgba(213, 213, 213, 1);
+}
+
+.filter-table td {
+    padding: 23px 22px;
+    border-right: 1px solid #ddd;
+    font-size: 15px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.filter-table td:last-child {
+    border-right: none;
+}
+
+.filter-cell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-cell select {
+    border: none;
+}
+
+.reset-cell {
+    text-align: right;
+    width: 100%;
+}
+
+.reset-filter-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    color: #e91e63;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.reset-filter-button img {
+    margin-right: 5px;
+}
+
+.filter-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-dropdown {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-reset {
+    width: 14px;
+    height: 16px;
+}
+
+.filter-label {
+    font-weight: 500;
+    color: rgba(32, 34, 36, 1);
+}
+
+.box-table {
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+}
+
+.orders-table .thead tr {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.orders-table {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    font-size: 14px;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+.orders-table__header {
+    text-align: left;
+    padding: 12px 30px;
+    font-weight: 750;
+    color: rgba(32, 34, 36, 1);
+}
+
+.orders-table__row {
+    border-top: 1px solid #e0e0e0;
+    font-weight: 500;
+    color: rgba(32, 34, 36, 1);
+}
+
+.orders-table__cell {
+    flex: 0.16;
+    padding: 25px 30px;
+}
+
+.orders-table__empty {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-style: italic;
+}
+
+/* .datepicker-popup {
+    position: absolute;
+    background: white;
+
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    margin-top: 330px;
+} */
+
+.date-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 15px;
+}
+
+/* Popup контейнер календаря */
+.datepicker-popup {
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 16px 18px;
+    box-shadow: 0px 13px 61px 0px rgba(169, 169, 169, 0.366);
+    z-index: 1000;
+    min-width: 300px;
+    margin-top: 380px;
+    left: 300px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Общий контейнер календаря */
+.react-datepicker {
+    font-family: 'Nunito Sans', sans-serif;
+    border: none;
+    background: #FFF;
+    width: 100%;
+}
+
+/* Шапка календаря (месяц и навигация) */
+.react-datepicker__header {
+    background-color: #FFFFFF;
+    border: none;
+    text-align: center;
+}
+
+/* Название месяца */
+.react-datepicker__current-month {
+    font-size: 16px;
+    font-weight: 600;
+    color: #202224;
+    position: relative;
+    top: 5px;
+}
+
+/* Навигация стрелки */
+.react-datepicker__navigation {
+    background-color: #F3F4F6;
+    border-radius: 6px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    top: 8px;
+    transition: 0.2s ease;
+}
+
+.react-datepicker__navigation:hover {
+    background-color: #E5E7EB;
+}
+
+/* Сетка дней */
+.react-datepicker__month {
+    margin: 0;
+    padding: 0;
+}
+
+.react-datepicker__day-names {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px  0 0;
+    color: #6B7280;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 0.4px solid rgba(151, 151, 151, 1);
+}
+
+.react-datepicker__week {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Дни */
+.react-datepicker__day {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #374151;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Hover эффект */
+.react-datepicker__day:hover {
+    background-color: #F3F4F6;
+}
+
+/* Выбранный день */
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+    background-color: #4F46E5;
+    color: #FFF;
+    font-weight: 600;
+}
+
+/* Сегодня */
+.react-datepicker__day--today {
+    /* border: 1px solid rgba(96, 133, 255, 1);
+    border-radius: 8px; */
+    font-weight: 400;
+}
+
+.react-datepicker__day--selected, .react-datepicker__day--keyboard-selected {
+    background-color: white;
+    color: #374151;
+    font-weight: 400;
+}
+
+
+/* Неактивные (другие месяцы) */
+.react-datepicker__day--outside-month {
+    color: #D1D5DB;
+    pointer-events: none;
+}
+
+.status-cell {
+    width: 100px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.status-completed {
+    background-color: #C2F3EA;
+    color: #00897B;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.status-processing {
+    background-color: #E6D8FF;
+    color: #7B1FA2;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.status-rejected {
+    background-color: #FDDCDC;
+    color: #E53935;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.status-onhold {
+    background-color: #FFE4C4;
+    color: #FF9800;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.status-intransit {
+    background-color: #F3D8FF;
+    color: #8E24AA;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 5px 10px;
+    display: inline-block;
+}

@@ -1,0 +1,84 @@
+.productstock-section {
+    background-color: #F2F2F2;
+    padding: 30px 40px 30px 25px;
+    height: 100%;
+    font-family: 'Nunito Sans';
+}
+
+.productstock-section .title-box h3 {
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: rgba(32, 34, 36, 1);
+}
+
+.productstock-section .higher-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.productstock-section .higher-container .search-box {
+    width: 16vw;
+    height: 38px;
+    padding: 0 15px;
+    border: rgba(213, 213, 213, 1) solid 1px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.productstock-section .higher-container .search-box img {
+    width: 16px;
+    position: relative;
+    bottom: 1.5px;
+}
+
+.productstock-section .higher-container .search-box input {
+    outline: none;
+    border: none;
+    color: rgb(60, 60, 60);
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 1);
+    font-family: 'Nunito Sans';
+    font-weight: 300;}
+
+
+.box-table {
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+}
+
+.orders-table .thead tr {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.orders-table {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    font-size: 14px;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+.orders-table__header {
+    text-align: left;
+    padding: 12px 30px;
+    font-weight: 750;
+    color: rgba(32, 34, 36, 1);
+}
+
+.orders-table__row {
+    border-top: 1px solid #e0e0e0;
+    font-weight: 500;
+    color: rgba(32, 34, 36, 1);
+}
+
+.orders-table__cell {
+    padding: 20px 30px;
+}

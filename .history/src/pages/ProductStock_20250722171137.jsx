@@ -1,0 +1,43 @@
+import React from 'react';
+import data from "../data.js";
+import '/src/pages/ProductStock.css';
+
+export default function ProductStock() {
+    return (
+        <div className='productstock-section'>
+            <div className='higher-container'>
+                <div className="title-box"><h3>Product Stock</h3></div>
+                <div className='search-box'>
+                    <img src="/images/search-icon.png" alt="" />
+                    <input id="search" type="text" placeholder="Search product name" />
+                </div>
+            </div>
+            <div className="box-table">
+                <table className="orders-table">
+                    <thead className="orders-table__head">
+                        <tr>
+                            <th className="orders-table__header">Image</th>
+                            <th className="orders-table__header">Product Name</th>
+                            <th className="orders-table__header">Category</th>
+                            <th className="orders-table__header">Price</th>
+                            <th className="orders-table__header">Piece</th>
+                            <th className="orders-table__header">Available Color</th>
+                            <th className="orders-table__header">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr key={row.id} className="orders-table__row">
+                            <td className="orders-table__cell">{row.id}</td>
+                            <td className="orders-table__cell">{row.name}</td>
+                            <td className="orders-table__cell">{row.address}</td>
+                            <td className="orders-table__cell">{row.date}</td>
+                            <td className="orders-table__cell">{row.type}</td>
+                            <td className="orders-table__cell">{row.type}</td>
+                            <td className="orders-table__cell">{row.type}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    );
+}
