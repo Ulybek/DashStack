@@ -8,6 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
+    // читаем тему из localStorage (если была сохранена)
     return localStorage.getItem("darkMode") === "true";
   });
 
@@ -24,7 +25,7 @@ function App() {
     <BrowserRouter>
       <div className='App'>
         <div className='Page'>
-          <Aside darkMode={darkMode} />
+          <Aside />
           <Main  darkMode={darkMode} setDarkMode={setDarkMode} />
         </div>
       </div>

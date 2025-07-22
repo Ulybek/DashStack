@@ -24,7 +24,7 @@ function App() {
     <BrowserRouter>
       <div className='App'>
         <div className='Page'>
-          <Aside darkMode={darkMode} />
+          <Aside />
           <Main  darkMode={darkMode} setDarkMode={setDarkMode} />
         </div>
       </div>

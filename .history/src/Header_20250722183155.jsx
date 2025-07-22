@@ -3,7 +3,7 @@ import { FaMoon, FaSun } from 'react-icons/fa';
 import './Header.css';
 
 
-export default function Header({ darkMode, setDarkMode }) {
+export default function Header() {
     return (
         <header className='header'>
             <div className='navbar-menu-2'>
@@ -15,12 +15,6 @@ export default function Header({ darkMode, setDarkMode }) {
                     </div>
                 </div>
                 <div className='box-2'>
-                    <button
-                        className="theme-toggle-btn"
-                        onClick={() => setDarkMode(!darkMode)}
-                    >
-                        {darkMode ? <FaSun size={18} /> : <FaMoon size={18} />}
-                    </button>
                     <div className='message-button'>
                         <img src="images/message-icon.png" alt="" />
                     </div>
@@ -30,6 +24,12 @@ export default function Header({ darkMode, setDarkMode }) {
                             <p>English</p>
                             <img className='dropdown-img' src="images/dropdown.png" alt="" />
                         </div>
+                        <button
+                            className="theme-toggle-btn"
+                            onClick={() => setDarkMode(!darkMode)}
+                        >
+                            {darkMode ? <FaSun size={18} /> : <FaMoon size={18} />}
+                        </button>
                     </div>
                     <div className='profile-button-box'>
                         <img src="images/profile-icon.png" alt="" />
