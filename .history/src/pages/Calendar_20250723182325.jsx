@@ -121,7 +121,7 @@ export default function Calendar() {
                 </div>
 
                 {/* Основной календарь */}
-                <div className='calendar-section calendar'>
+                <div className='calendar-section'>
                     <FullCalendar
                         plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
                         headerToolbar={{

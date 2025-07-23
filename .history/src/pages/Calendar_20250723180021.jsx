@@ -82,46 +82,41 @@ export default function Calendar() {
                     <button className="add-event-btn">+ Add New Event</button>
                     <h4 className="sidebar-title">You are going to</h4>
                     <ul className="event-list">
-                        {events.map((event, idx) => (
-                            <React.Fragment key={event.id}>
-                                <li className="event-item">
-                                    <div className="event-icon">
-                                        {event.avatars[0] ? (
-                                            <img src={event.avatars[0]} alt="icon" className="event-main-avatar" />
-                                        ) : (
-                                            <div className="placeholder-icon"></div>
-                                        )}
+                        {events.map(event => (
+                            <li key={event.id} className="event-item">
+                                <div className="event-icon">
+                                    {event.avatars[0] ? (
+                                        <img src={event.avatars[0]} alt="icon" className="event-main-avatar" />
+                                    ) : (
+                                        <div className="placeholder-icon"></div>
+                                    )}
+                                </div>
+                                <div className="event-info">
+                                    <div className="event-title">{event.title}</div>
+                                    <div className="event-time">
+                                        {new Date(event.start).toLocaleDateString('en-GB', {
+                                            day: 'numeric',
+                                            month: 'long',
+                                            year: 'numeric'
+                                        })}{' '}
+                                        at {new Date(event.start).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                                     </div>
-                                    <div className="event-info">
-                                        <div className="event-title">{event.title}</div>
-                                        <div className="event-time">
-                                            {new Date(event.start).toLocaleDateString('en-GB', {
-                                                day: 'numeric',
-                                                month: 'long',
-                                                year: 'numeric'
-                                            })}{' '}
-                                            at {new Date(event.start).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
-                                        </div>
-                                        <div className="event-location">{event.location}</div>
-                                        <div className="event-avatars">
-                                            {event.avatars.slice(0, 4).map((src, idx) => (
-                                                <img key={idx} src={src} alt="avatar" className="avatar" />
-                                            ))}
-                                            <span className="participants">{event.participants}+</span>
-                                        </div>
+                                    <div className="event-location">{event.location}</div>
+                                    <div className="event-avatars">
+                                        {event.avatars.slice(0, 4).map((src, idx) => (
+                                            <img key={idx} src={src} alt="avatar" className="avatar" />
+                                        ))}
+                                        <span className="participants">{event.participants}+</span>
                                     </div>
-                                </li>
-
-                                {/* Разделитель */}
-                                {idx < events.length - 1 && <hr className="event-divider" />}
-                            </React.Fragment>
+                                </div>
+                            </li>
                         ))}
                     </ul>
                     <button className="see-more-btn">See More</button>
                 </div>
 
                 {/* Основной календарь */}
-                <div className='calendar-section calendar'>
+                <div className='calendar-section'>
                     <FullCalendar
                         plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
                         headerToolbar={{

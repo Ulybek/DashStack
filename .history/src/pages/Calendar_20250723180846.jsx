@@ -117,11 +117,12 @@ export default function Calendar() {
                             </React.Fragment>
                         ))}
                     </ul>
+
                     <button className="see-more-btn">See More</button>
                 </div>
 
                 {/* Основной календарь */}
-                <div className='calendar-section calendar'>
+                <div className='calendar-section'>
                     <FullCalendar
                         plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
                         headerToolbar={{

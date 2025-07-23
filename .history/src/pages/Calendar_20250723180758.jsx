@@ -112,8 +112,8 @@ export default function Calendar() {
                                     </div>
                                 </li>
 
-                                {/* Разделитель */}
-                                {idx < events.length - 1 && <hr className="event-divider" />}
+                                {/* Разделитель между событиями */}
+                                {idx < events.length - 1 && <div className="event-divider"></div>}
                             </React.Fragment>
                         ))}
                     </ul>
@@ -121,7 +121,7 @@ export default function Calendar() {
                 </div>
 
                 {/* Основной календарь */}
-                <div className='calendar-section calendar'>
+                <div className='calendar-section'>
                     <FullCalendar
                         plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
                         headerToolbar={{
