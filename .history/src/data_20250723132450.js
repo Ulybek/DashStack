@@ -1,0 +1,406 @@
+import {
+  FaTachometerAlt, FaBox, FaHeart, FaList, FaCubes, FaTags, FaCalendar,
+  FaTasks, FaAddressBook, FaFileInvoice, FaPuzzlePiece, FaUsers, FaTable,
+  FaCog, FaSignOutAlt
+} from 'react-icons/fa';
+
+const data = {
+  menuItems: [
+    {
+      section: "main",
+      items: [
+        { id: "dashboard", label: "Dashboard", icon: FaTachometerAlt, path: '/dashboard' },
+        { id: "products", label: "Products", icon: FaBox, path: '/products' },
+        { id: "favorites", label: "Favorites", icon: FaHeart, path: '/favorites' },
+        { id: "orderlists", label: "Order Lists", icon: FaList, path: '/orderlists' },
+        { id: "productstock", label: "Product Stock", icon: FaCubes, path: '/productstock' },
+      ],
+    },
+    {
+      section: "pages",
+      title: "PAGES",
+      items: [
+        { id: "pricing", label: "Pricing", icon: FaTags, path: '/pricing' },
+        { id: "calendar", label: "Calendar", icon: FaCalendar, path: '/calendar' },
+        { id: "todo", label: "To-Do", icon: FaTasks, path: '/todo' },
+        { id: "contact", label: "Contact", icon: FaAddressBook, path: '/contact' },
+        { id: "invoice", label: "Invoice", icon: FaFileInvoice, path: '/invoice' },
+        { id: "uielements", label: "UI Elements", icon: FaPuzzlePiece, path: '/uielements' },
+        { id: "team", label: "Team", icon: FaUsers, path: '/team' },
+        { id: "table", label: "Table", icon: FaTable, path: '/table' },
+      ],
+    },
+    {
+      section: "bottom",
+      items: [
+        { id: "settings", label: "Settings", icon: FaCog, path: '/settings' },
+        { id: "logout", label: "Logout", icon: FaSignOutAlt, path: '/logout' },
+      ],
+    },
+  ],
+  total_objects: [
+    { id: 1, label: "Total User", number: "40,689",  iconLight: "/images/totaluser-icon-white.png", iconDark: "/images/totaluser-icon-dark.png", pathImg: '/images/pathgrow.png', percent: '8.5%', action: 'Up from yesterday' },
+    { id: 2, label: "Total Order", number: "10,293", iconImg: '/images/totalorder-icon.png', pathImg: '/images/pathgrow.png', percent: '8.5%', action: 'Up from yesterday' },
+    { id: 3, label: "Total Sales", number: "$89,000", iconImg: '/images/totalsales-icon.png', pathImg: '/images/pathdown.png', percent: '4.3%', action: 'Down from yesterday' },
+    { id: 4, label: "Total Pending", number: "2040", iconImg: '/images/totalpending-icon.png', pathImg: '/images/pathgrow.png', percent: '8.5%', action: 'Up from yesterday' }
+  ],
+  chart_data: [
+    { name: '5k', value: 0.2 },
+    { name: '10k', value: 0.45 },
+    { name: '15k', value: 0.4 },
+    { name: '20k', value: 0.85 },
+    { name: '25k', value: 0.42 },
+    { name: '30k', value: 0.58 },
+    { name: '35k', value: 0.25 },
+    { name: '40k', value: 0.6 },
+    { name: '45k', value: 0.75 },
+    { name: '50k', value: 0.66 },
+    { name: '55k', value: 0.4 },
+    { name: '60k', value: 0.52 },
+  ],
+  months: [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+  ],
+  dealsData: [
+    {
+      id: 1,
+      productName: 'Apple Watch',
+      productImg: '/images/applewatch.png',
+      location: '6096 Marjolaine Landing',
+      dateTime: '12.09.2019 - 12.53 PM',
+      piece: 423,
+      amount: '$34,295',
+      status: 'Delivered',
+    },
+    {
+      id: 2,
+      productName: 'Apple Watch',
+      productImg: '/images/applewatch.png',
+      location: '6096 Marjolaine Landing',
+      dateTime: '12.09.2019 - 12.53 PM',
+      piece: 423,
+      amount: '$34,295',
+      status: 'Delivered',
+    }
+  ],
+  events: [
+    {
+      id: 1,
+      date: 'September 12–22',
+      title: 'Enjoy free home delivery in this summer',
+      subtitle: 'Designer Dresses – Pick from trendy Designer Dress.',
+      buttonText: 'Get Started',
+    },
+    {
+      id: 2,
+      date: 'September 12–22',
+      title: 'Enjoy free home delivery in this summer',
+      subtitle: 'Designer Dresses – Pick from trendy Designer Dress.',
+      buttonText: 'Get Started',
+    }
+  ],
+  products: [
+    {
+      id: 1,
+      image: '/images/bigapplewatch.png',
+      title: 'Apple Watch Series 4',
+      price: '$120.00',
+      rating: 4,
+      reviews: 131,
+    },
+    {
+      id: 2,
+      image: '/images/bigapplewatch.png',
+      title: 'Samsung Galaxy Watch',
+      price: '$99.00',
+      rating: 5,
+      reviews: 89,
+    },
+    {
+      id: 3,
+      image: '/images/bigapplewatch.png',
+      title: 'Fitbit Versa 3',
+      price: '$140.00',
+      rating: 3,
+      reviews: 56,
+    },
+    {
+      id: 4,
+      image: '/images/bigapplewatch.png',
+      title: 'Garmin Venu Sq',
+      price: '$110.00',
+      rating: 4,
+      reviews: 78,
+    },
+    {
+      id: 5,
+      image: '/images/bigapplewatch.png',
+      title: 'Huawei Watch GT',
+      price: '$89.00',
+      rating: 4,
+      reviews: 102,
+    },
+    {
+      id: 6,
+      image: '/images/bigapplewatch.png',
+      title: 'Xiaomi Watch S1',
+      price: '$70.00',
+      rating: 3,
+      reviews: 63,
+    },
+    {
+      id: 7,
+      image: '/images/bigapplewatch.png',
+      title: 'Samsung Galaxy Watch',
+      price: '$99.00',
+      rating: 5,
+      reviews: 89,
+    },
+    {
+      id: 8,
+      image: '/images/bigapplewatch.png',
+      title: 'Samsung Galaxy Watch',
+      price: '$99.00',
+      rating: 5,
+      reviews: 89,
+    },
+    {
+      id: 9,
+      image: '/images/bigapplewatch.png',
+      title: 'Samsung Galaxy Watch',
+      price: '$99.00',
+      rating: 5,
+      reviews: 89,
+    }
+  ],
+  favorites: [
+    {
+      id: 1,
+      image: '/images/favapplewatch.png',
+      title: 'Apple Watch Series 4',
+      price: '$120.00',
+      rating: 4,
+      reviews: 131,
+    },
+    {
+      id: 2,
+      image: '/images/favapplewatch.png',
+      title: 'Samsung Galaxy Watch',
+      price: '$99.00',
+      rating: 5,
+      reviews: 89,
+    },
+    {
+      id: 3,
+      image: '/images/favapplewatch.png',
+      title: 'Fitbit Versa 3',
+      price: '$140.00',
+      rating: 3,
+      reviews: 56,
+    },
+    {
+      id: 4,
+      image: '/images/favapplewatch.png',
+      title: 'Garmin Venu Sq',
+      price: '$110.00',
+      rating: 4,
+      reviews: 78,
+    },
+    {
+      id: 5,
+      image: '/images/favapplewatch.png',
+      title: 'Huawei Watch GT',
+      price: '$89.00',
+      rating: 4,
+      reviews: 102,
+    },
+    {
+      id: 6,
+      image: '/images/favapplewatch.png',
+      title: 'Xiaomi Watch S1',
+      price: '$70.00',
+      rating: 3,
+      reviews: 63,
+    },
+    {
+      id: 7,
+      image: '/images/favapplewatch.png',
+      title: 'Apple Watch Series 4',
+      price: '$120.00',
+      rating: 4,
+      reviews: 131,
+    },
+    {
+      id: 8,
+      image: '/images/favapplewatch.png',
+      title: 'Samsung Galaxy Watch',
+      price: '$99.00',
+      rating: 5,
+      reviews: 89,
+    },
+    {
+      id: 9,
+      image: '/images/favapplewatch.png',
+      title: 'Fitbit Versa 3',
+      price: '$140.00',
+      rating: 3,
+      reviews: 56,
+    },
+    {
+      id: 10,
+      image: '/images/favapplewatch.png',
+      title: 'Garmin Venu Sq',
+      price: '$110.00',
+      rating: 4,
+      reviews: 78,
+    },
+    {
+      id: 11,
+      image: '/images/favapplewatch.png',
+      title: 'Huawei Watch GT',
+      price: '$89.00',
+      rating: 4,
+      reviews: 102,
+    },
+    {
+      id: 12,
+      image: '/images/favapplewatch.png',
+      title: 'Xiaomi Watch S1',
+      price: '$70.00',
+      rating: 3,
+      reviews: 63,
+    }
+  ],
+  order_data: [
+    { id: "00001", name: "Christine Brooks", address: "089 Kutch Green Apt. 448", date: "14 Feb 2019", type: "Electric", status: "Completed" },
+    { id: "00002", name: "Rosie Pearson", address: "979 Immanuel Ferry Suite 526", date: "14 Feb 2019", type: "Book", status: "Processing" },
+    { id: "00003", name: "Darrell Caldwell", address: "8587 Frida Ports", date: "14 Feb 2019", type: "Medicine", status: "Rejected" },
+    { id: "00004", name: "Gilbert Johnston", address: "768 Destiny Lake Suite 600", date: "14 Feb 2019", type: "Mobile", status: "Completed" },
+    { id: "00005", name: "Alan Cain", address: "042 Mylene Throughway", date: "14 Feb 2019", type: "Watch", status: "Processing" },
+    { id: "00006", name: "Alfred Murray", address: "543 Weimann Mountain", date: "14 Feb 2019", type: "Medicine", status: "Completed" },
+    { id: '00007', name: 'Maggie Sullivan', address: 'New Scottieberg', date: '21 Dec 2019', type: 'Watch', status: 'Processing' },
+    { id: '00008', name: 'Rosie Todd', address: 'New Jon', date: '30 Apr 2019', type: 'Medicine', status: 'On Hold' },
+    { id: '00009', name: 'Dollie Hines', address: '124 Lyla Forge Suite 975', date: '09 Jan 2019', type: 'Book', status: 'In Transit' },
+    { id: "00010", name: "Howard Nash", address: "457 Ivy Row Apt. 120", date: "22 Mar 2019", type: "Medicine", status: "Completed" },
+    { id: "00011", name: "Eliza Vaughn", address: "23 Maplewood Heights", date: "11 Jul 2019", type: "Book", status: "Processing" },
+    { id: "00012", name: "Kevin Ross", address: "77 Birchwood Plaza", date: "01 Aug 2019", type: "Watch", status: "Rejected" },
+    { id: "00013", name: "Sophie Clarke", address: "909 Sunrise Avenue", date: "13 Oct 2019", type: "Mobile", status: "Completed" },
+    { id: "00014", name: "Nathan Brooks", address: "33 Sunset Boulevard", date: "03 Nov 2019", type: "Electric", status: "On Hold" },
+    { id: "00015", name: "Grace Palmer", address: "567 Willow Creek Lane", date: "19 Feb 2019", type: "Medicine", status: "Completed" },
+    { id: "00016", name: "Aaron Long", address: "125 Aspen Ridge", date: "24 May 2019", type: "Book", status: "Processing" },
+    { id: "00017", name: "Victoria Black", address: "701 Cedar Court", date: "17 Jun 2019", type: "Watch", status: "Completed" },
+    { id: "00018", name: "Ethan Price", address: "982 Spruce Trail", date: "05 Jul 2019", type: "Medicine", status: "In Transit" },
+    { id: "00019", name: "Clara Hughes", address: "401 Redwood Drive", date: "29 Aug 2019", type: "Mobile", status: "Processing" }
+  ],
+  product_stock: [
+    {
+      image: "/images/applewatchseries4.png",
+      name: "Apple Watch Series 4",
+      category: "Digital Product",
+      price: 690,
+      piece: 63,
+      colors: ["#000000", "#C0C0C0", "#E0B0B0"]
+    },
+    {
+      image: "/images/microsoftheadphones.png",
+      name: "Microsoft Headsquare",
+      category: "Digital Product",
+      price: 190,
+      piece: 13,
+      colors: ["#000000", "#FF99CC", "#6699FF", "#FFD700"]
+    },
+    {
+      image: "/images/womendress.png",
+      name: "Women's Dress",
+      category: "Fashion",
+      price: 640,
+      piece: 635,
+      colors: ["#800020", "#87CEEB", "#0000FF"]
+    },
+    {
+      id: 4,
+      image: "/images/samsunga50.png",
+      name: "Samsung A50",
+      category: "Mobile",
+      price: 400,
+      piece: 67,
+      colors: ["#000080", "#000000", "#800020"]
+    },
+    {
+      id: 5,
+      image: "/images/camera.png",
+      name: "Camera",
+      category: "Electronic",
+      price: 420,
+      piece: 52,
+      colors: ["#000080", "#800020", "#FF0000"]
+    },
+    {
+      id: 6,
+      image: "/images/microsoftheadphones.png",
+      name: "Microsoft Headsquare",
+      category: "Digital Product",
+      price: 190,
+      piece: 13,
+      colors: ["#000000", "#FF99CC", "#6699FF", "#FFD700"]
+    },
+    {
+      id: 7,
+      image: "/images/womendress.png",
+      name: "Women's Dress",
+      category: "Fashion",
+      price: 640,
+      piece: 635,
+      colors: ["#800020", "#87CEEB", "#0000FF"]
+    },
+    {
+      id: 8,
+      image: "/images/camera.png",
+      name: "Camera",
+      category: "Electronic",
+      price: 420,
+      piece: 52,
+      colors: ["#000080", "#800020", "#FF0000"]
+    },
+    {
+      id: 9,
+      image: "/images/microsoftheadphones.png",
+      name: "Microsoft Headsquare",
+      category: "Digital Product",
+      price: 190,
+      piece: 13,
+      colors: ["#000000", "#FF99CC", "#6699FF", "#FFD700"]
+    },
+    {
+      id: 10,
+      image: "/images/womendress.png",
+      name: "Women's Dress",
+      category: "Fashion",
+      price: 640,
+      piece: 635,
+      colors: ["#800020", "#87CEEB", "#0000FF"]
+    },
+    {
+      id: 9,
+      image: "/images/microsoftheadphones.png",
+      name: "Microsoft Headsquare",
+      category: "Digital Product",
+      price: 190,
+      piece: 13,
+      colors: ["#000000", "#FF99CC", "#6699FF", "#FFD700"]
+    },
+    {
+      id: 10,
+      image: "/images/womendress.png",
+      name: "Women's Dress",
+      category: "Fashion",
+      price: 640,
+      piece: 635,
+      colors: ["#800020", "#87CEEB", "#0000FF"]
+    }
+  ]
+
+};
+
+export default data;
