@@ -1,0 +1,305 @@
+.header {
+    border-bottom: solid rgba(224, 224, 224, 1) 1px;
+}
+
+body.dark .header {
+    border-bottom: 1px solid rgba(39, 49, 66, 1);
+}
+
+.navbar-menu-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.navbar-menu-2 .box-1 {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu-2 .toggle-button {
+    margin-left: 30px;
+    margin-right: 20px;
+    display: flex;
+}
+
+.navbar-menu-2 .box-1 .toggle-button img {
+    width: 20px;
+}
+
+/* Светлая тема (по умолчанию) */
+.navbar-menu-2 .box-1 .search {
+    width: 27vw;
+    height: 38px;
+    padding: 0 15px;
+    border: rgba(213, 213, 213, 1) solid 1px;
+    background-color: rgba(245, 246, 250, 1);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar-menu-2 .box-1 .search input {
+    outline: none;
+    border: none;
+    color: rgb(60, 60, 60);
+    font-size: 14px;
+    background-color: rgba(245, 246, 250, 1);
+    font-family: 'Nunito Sans';
+    font-weight: 300;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Тёмная тема */
+body.dark .navbar-menu-2 .box-1 .search {
+    border: rgba(207, 207, 207, 0.1142) solid 1px;
+    background-color: rgba(50, 61, 78, 1);
+    /* тёмно-серый фон */
+}
+
+body.dark .navbar-menu-2 .box-1 .search input {
+    color: #e0e0e0;
+    background-color: transparent;
+}
+
+
+.navbar-menu-2 .box-2 {
+    display: flex;
+    align-items: center;
+}
+
+.message-button {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+.message-button img {
+    width: 24px;
+    height: 25.5px;
+}
+
+.language-button-box {
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.language-button {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+    font-size: 13.5px;
+    color: rgba(100, 100, 100, 1);
+}
+
+.language-button-box img {
+    width: 40px;
+    height: 27px;
+}
+
+.language-button-box .dropdown-img {
+    width: 8px;
+    height: 4.5px;
+    position: relative;
+    top: 3px;
+}
+
+.profile-button-box {
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 0;
+    gap: 15px;
+}
+
+.profile-button-box img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: transparent;
+    transition: 0.3s ease;
+}
+
+.profile-button-box .dropdown-img {
+    width: 23px;
+    height: 23px;
+}
+
+.theme-switch {
+    width: 60px;
+    height: 30px;
+    background-color: #004DA4;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    transition: 0.4s ease;
+}
+
+.switch-circle {
+    width: 24px;
+    height: 24px;
+    background-color: #4074F3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #FFD700;
+    position: absolute;
+    left: 3px;
+    transition: all 0.4s ease;
+}
+
+/* Положение кружка в темной теме */
+.theme-switch.dark .switch-circle {
+    left: 33px;
+    /* сдвигаем вправо */
+    color: #FFD700;
+    /* тёмно-синий для солнца */
+}
+
+body.dark .switch-circle svg {
+    color: #FFD700 !important;
+}
+
+/* В тёмной теме добавить светлый фон */
+body.dark .profile-button-box img {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.profile-button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-button .text {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito Sans';
+}
+
+.burger-icon {
+    font-size: 17px;
+    color: rgba(32, 34, 36, 1);
+    /* Светлая тема */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+body.dark .burger-icon {
+    color: #cecece;
+    /* Темная тема */
+}
+
+.search-icon {
+    font-size: 16px;
+    color: rgba(32, 34, 36, 1);
+    /* Светлая тема */
+    transition: color 0.3s ease;
+}
+
+body.dark .search-icon {
+    color: #cecece;
+    /* Темная тема */
+}
+
+.message-icon {
+    font-size: 24px;
+    color: #222;
+    /* светлая тема */
+    transition: color 0.3s ease;
+}
+
+.dropdown-icon {
+    font-size: 12px;
+    color: #222;
+    /* светлая тема */
+    transition: color 0.3s ease;
+}
+
+
+body.dark .message-icon,
+body.dark .dropdown-icon {
+    color: #ececec;
+    /* тёмная тема */
+}
+
+.language-text {
+    color: #222;
+    /* светлая тема */
+    transition: color 0.3s ease;
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+    font-size: 14px;
+}
+
+body.dark .language-text {
+    color: white;
+    /* тёмная тема */
+}
+
+.profile-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #222;
+    /* Светлая тема */
+    transition: color 0.3s ease;
+}
+
+.profile-role {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #555;
+    /* Светлая тема */
+    transition: color 0.3s ease;
+}
+
+/* Тёмная тема */
+body.dark .profile-name {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+body.dark .profile-role {
+    color: rgba(239, 239, 239, 0.8);
+}
+
+
+@media (max-width: 1280px) {
+
+    .message-icon {
+        font-size: 20px;
+    }
+    
+    .dropdown-icon {
+        font-size: 10px;
+    }
+
+    .language-text {
+        font-weight: 500;
+        font-size: 13.5px;
+    }
+
+    .profile-name {
+        font-size: 13.5px;
+        font-weight: 700;
+
+    }
+
+    .profile-role {
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+
+
+@media (max-width: 1024px) {}
