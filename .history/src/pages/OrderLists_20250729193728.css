@@ -649,11 +649,6 @@ body.dark .status-intransit {
     color: white;
 }
 
-.pagination-wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
 .pagination {
     display: flex;
     justify-content: flex-end;
@@ -661,10 +656,11 @@ body.dark .status-intransit {
     gap: 10px;
 }
 
-.orderlists-section .pagination-info {
+.pagination-info {
     font-size: 15px;
     color: rgb(121, 121, 121);
-    top: 0;
+    position: relative;
+    top: 25px;
 }
 
 body.dark .pagination-info {
@@ -733,26 +729,9 @@ body.dark .page-item {
     .orders-table__cell {
         font-size: 13px;
     }
-
-    .page-item {
-        padding: 5px 10px !important;
-        font-size: 12px !important;
-    }
-
-    .pagination-info {
-        font-size: 13px !important;
-    }
 }
 
 @media (max-width: 1024px) {
-
-    .menu-order {
-        overflow-x: auto;
-    }
-
-    .box-table {
-        overflow-x: auto;
-    }
 
     .filter-icon {
         width: 15px;
@@ -760,6 +739,7 @@ body.dark .page-item {
 
     .filter-table td {
         font-size: 13px;
+        padding: 10px 15px;
     }
 
     .dropdown-btn {
@@ -780,20 +760,5 @@ body.dark .page-item {
 
     .orders-table__cell {
         font-size: 11px;
-    }
-
-    .page-item {
-        padding: 4px 9px !important;
-        font-size: 11px !important;
-    }
-
-    .pagination-info {
-        font-size: 10px !important;
-    }
-}
-
-@media (max-width: 768px) {
-    .orderlists-section .title-box h3 {
-        font-size: 23px;
     }
 }

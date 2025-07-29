@@ -106,7 +106,7 @@ body.dark svg {
 }
 
 .icon-dropdown {
-    font-size: 12px;
+    font-size: 16px;
     color: #333;
 }
 
@@ -649,11 +649,6 @@ body.dark .status-intransit {
     color: white;
 }
 
-.pagination-wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
 .pagination {
     display: flex;
     justify-content: flex-end;
@@ -661,10 +656,11 @@ body.dark .status-intransit {
     gap: 10px;
 }
 
-.orderlists-section .pagination-info {
+.pagination-info {
     font-size: 15px;
     color: rgb(121, 121, 121);
-    top: 0;
+    position: relative;
+    top: 25px;
 }
 
 body.dark .pagination-info {
@@ -709,91 +705,53 @@ body.dark .page-item {
         font-size: 25px;
     }
 
-    .filter-table td {
+    .filter-table td{
         font-size: 13px;
         padding: 12px 16px;
     }
 
-    .dropdown-btn {
+    .dropdown-btn{
         font-size: 13px;
     }
 
-    .date-trigger {
+    .date-trigger{
         gap: 10px;
+    
     }
 
-    .reset-filter-button {
+    .reset-filter-button{
         font-size: 13px;
     }
 
-    .orders-table__header {
+    
+    .orders-table__header{
         font-size: 13px;
     }
 
-    .orders-table__cell {
+    .orders-table__cell{
         font-size: 13px;
-    }
-
-    .page-item {
-        padding: 5px 10px !important;
-        font-size: 12px !important;
-    }
-
-    .pagination-info {
-        font-size: 13px !important;
     }
 }
 
 @media (max-width: 1024px) {
-
-    .menu-order {
-        overflow-x: auto;
+    .filter-table td{
+        font-size: 13px;
+        padding: 10px 15px;
     }
 
-    .box-table {
-        overflow-x: auto;
-    }
-
-    .filter-icon {
-        width: 15px;
-    }
-
-    .filter-table td {
+    .dropdown-btn{
         font-size: 13px;
     }
 
-    .dropdown-btn {
+    .reset-filter-button{
         font-size: 13px;
     }
 
-    .icon-dropdown {
-        font-size: 12px;
-    }
-
-    .reset-filter-button {
-        font-size: 13px;
-    }
-
-    .orders-table__header {
+    .orders-table__header{
         font-size: 11px;
     }
 
-    .orders-table__cell {
+    .orders-table__cell{
         font-size: 11px;
-    }
-
-    .page-item {
-        padding: 4px 9px !important;
-        font-size: 11px !important;
-    }
-
-    .pagination-info {
-        font-size: 10px !important;
-    }
-}
-
-@media (max-width: 768px) {
-    .orderlists-section .title-box h3 {
-        font-size: 23px;
     }
 }

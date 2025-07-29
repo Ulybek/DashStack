@@ -649,7 +649,7 @@ body.dark .status-intransit {
     color: white;
 }
 
-.pagination-wrapper {
+.pagination-wrapper{
     display: flex;
     justify-content: space-between;
 }
@@ -734,23 +734,19 @@ body.dark .page-item {
         font-size: 13px;
     }
 
-    .page-item {
+    .page-item{
         padding: 5px 10px !important;
         font-size: 12px !important;
     }
 
-    .pagination-info {
+    .pagination-info{
         font-size: 13px !important;
     }
 }
 
 @media (max-width: 1024px) {
 
-    .menu-order {
-        overflow-x: auto;
-    }
-
-    .box-table {
+    .box-table{
         overflow-x: auto;
     }
 
@@ -782,18 +778,12 @@ body.dark .page-item {
         font-size: 11px;
     }
 
-    .page-item {
+    .page-item{
         padding: 4px 9px !important;
         font-size: 11px !important;
     }
 
-    .pagination-info {
+    .pagination-info{
         font-size: 10px !important;
-    }
-}
-
-@media (max-width: 768px) {
-    .orderlists-section .title-box h3 {
-        font-size: 23px;
     }
 }
