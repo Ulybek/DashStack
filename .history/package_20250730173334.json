@@ -3,11 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ulybek.github.io/second-react-app",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "homepage": "https://ТВОЙ_НИК.github.io/second-react-app",
     "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },

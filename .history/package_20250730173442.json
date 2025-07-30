@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ulybek.github.io/second-react-app",
+  "homepage": "https://Ulybek.github.io/second-react-app",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
