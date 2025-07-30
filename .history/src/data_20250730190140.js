@@ -39,10 +39,10 @@ const data = {
     },
   ],
   total_objects: [
-    { id: 1, label: "Total User", number: "40,689", iconLight: 'images/totaluser-icon-light.png', iconDark: 'images/totaluser-icon-dark.png', pathImg: 'images/pathgrow.png', percent: '8.5%', action: 'Up from yesterday' },
-    { id: 2, label: "Total Order", number: "10,293", iconLight: 'images/totalorder-icon-light.png', iconDark: 'images/totalorder-icon-dark.png', pathImg: 'images/pathgrow.png', percent: '8.5%', action: 'Up from yesterday' },
-    { id: 3, label: "Total Sales", number: "$89,000", iconLight: 'images/totalsales-icon-light.png', iconDark: 'images/totalsales-icon-dark.png', pathImg: 'images/pathgrow.png', percent: '4.3%', action: 'Down from yesterday' },
-    { id: 4, label: "Total Pending", number: "2040", iconLight: 'images/totalpending-icon-light.png', iconDark: 'images/totalpending-icon-dark.png', pathImg: 'images/pathgrow.png', percent: '8.5%', action: 'Up from yesterday' }
+    { id: 1, label: "Total User", number: "40,689", iconLight: 'images/totaluser-icon-light.png', iconDark: '/images/totaluser-icon-dark.png', pathImg: '/images/pathgrow.png', percent: '8.5%', action: 'Up from yesterday' },
+    { id: 2, label: "Total Order", number: "10,293", iconLight: '/images/totalorder-icon-light.png', iconDark: '/images/totalorder-icon-dark.png', pathImg: '/images/pathgrow.png', percent: '8.5%', action: 'Up from yesterday' },
+    { id: 3, label: "Total Sales", number: "$89,000", iconLight: '/images/totalsales-icon-light.png', iconDark: '/images/totalsales-icon-dark.png', pathImg: '/images/pathgrow.png', percent: '4.3%', action: 'Down from yesterday' },
+    { id: 4, label: "Total Pending", number: "2040", iconLight: '/images/totalpending-icon-light.png', iconDark: '/images/totalpending-icon-dark.png', pathImg: '/images/pathgrow.png', percent: '8.5%', action: 'Up from yesterday' }
   ],
   chart_data: [
     { name: '5k', value: 0.2 },
@@ -66,7 +66,7 @@ const data = {
     {
       id: 1,
       productName: 'Apple Watch',
-      productImg: 'images/applewatch.png',
+      productImg: '/images/applewatch.png',
       location: '6096 Marjolaine Landing',
       dateTime: '12.09.2019 - 12.53 PM',
       piece: 423,
@@ -76,7 +76,7 @@ const data = {
     {
       id: 2,
       productName: 'Apple Watch',
-      productImg: 'images/applewatch.png',
+      productImg: '/images/applewatch.png',
       location: '6096 Marjolaine Landing',
       dateTime: '12.09.2019 - 12.53 PM',
       piece: 423,
@@ -101,29 +101,29 @@ const data = {
     }
   ],
   products: [
-    { id: 1, image: 'images/bigapplewatch.png', title: 'Apple Watch Series 4', price: '$120.00', rating: 4, reviews: 131 },
-    { id: 2, image: 'images/bigapplewatch.png', title: 'Samsung Galaxy Watch', price: '$99.00', rating: 5, reviews: 89 },
-    { id: 3, image: 'images/bigapplewatch.png', title: 'Fitbit Versa 3', price: '$140.00', rating: 3, reviews: 56 },
-    { id: 4, image: 'images/bigapplewatch.png', title: 'Garmin Venu Sq', price: '$110.00', rating: 4, reviews: 78 },
-    { id: 5, image: 'images/bigapplewatch.png', title: 'Huawei Watch GT', price: '$89.00', rating: 4, reviews: 102 },
-    { id: 6, image: 'images/bigapplewatch.png', title: 'Xiaomi Watch S1', price: '$70.00', rating: 3, reviews: 63 },
-    { id: 7, image: 'images/bigapplewatch.png', title: 'Samsung Galaxy Watch', price: '$99.00', rating: 5, reviews: 89 },
-    { id: 8, image: 'images/bigapplewatch.png', title: 'Samsung Galaxy Watch', price: '$99.00', rating: 5, reviews: 89 },
-    { id: 9, image: 'images/bigapplewatch.png', title: 'Samsung Galaxy Watch', price: '$99.00', rating: 5, reviews: 89 }
+    { id: 1, image: '/images/bigapplewatch.png', title: 'Apple Watch Series 4', price: '$120.00', rating: 4, reviews: 131 },
+    { id: 2, image: '/images/bigapplewatch.png', title: 'Samsung Galaxy Watch', price: '$99.00', rating: 5, reviews: 89 },
+    { id: 3, image: '/images/bigapplewatch.png', title: 'Fitbit Versa 3', price: '$140.00', rating: 3, reviews: 56 },
+    { id: 4, image: '/images/bigapplewatch.png', title: 'Garmin Venu Sq', price: '$110.00', rating: 4, reviews: 78 },
+    { id: 5, image: '/images/bigapplewatch.png', title: 'Huawei Watch GT', price: '$89.00', rating: 4, reviews: 102 },
+    { id: 6, image: '/images/bigapplewatch.png', title: 'Xiaomi Watch S1', price: '$70.00', rating: 3, reviews: 63 },
+    { id: 7, image: '/images/bigapplewatch.png', title: 'Samsung Galaxy Watch', price: '$99.00', rating: 5, reviews: 89 },
+    { id: 8, image: '/images/bigapplewatch.png', title: 'Samsung Galaxy Watch', price: '$99.00', rating: 5, reviews: 89 },
+    { id: 9, image: '/images/bigapplewatch.png', title: 'Samsung Galaxy Watch', price: '$99.00', rating: 5, reviews: 89 }
   ],
   favorites: [
-    { id: 1, image: 'images/favapplewatch.png', title: 'Apple Watch Series 4', price: '$120.00', rating: 4, reviews: 131 },
-    { id: 2, image: 'images/favapplewatch.png', title: 'Samsung Galaxy Watch', price: '$99.00', rating: 5, reviews: 89 },
-    { id: 3, image: 'images/favapplewatch.png', title: 'Fitbit Versa 3', price: '$140.00', rating: 3, reviews: 56 },
-    { id: 4, image: 'images/favapplewatch.png', title: 'Garmin Venu Sq', price: '$110.00', rating: 4, reviews: 78 },
-    { id: 5, image: 'images/favapplewatch.png', title: 'Huawei Watch GT', price: '$89.00', rating: 4, reviews: 102 },
-    { id: 6, image: 'images/favapplewatch.png', title: 'Xiaomi Watch S1', price: '$70.00', rating: 3, reviews: 63 },
-    { id: 7, image: 'images/favapplewatch.png', title: 'Apple Watch Series 4', price: '$120.00', rating: 4, reviews: 131 },
-    { id: 8, image: 'images/favapplewatch.png', title: 'Samsung Galaxy Watch', price: '$99.00', rating: 5, reviews: 89 },
-    { id: 9, image: 'images/favapplewatch.png', title: 'Fitbit Versa 3', price: '$140.00', rating: 3, reviews: 56 },
-    { id: 10, image: 'images/favapplewatch.png', title: 'Garmin Venu Sq', price: '$110.00', rating: 4, reviews: 78 },
-    { id: 11, image: 'images/favapplewatch.png', title: 'Huawei Watch GT', price: '$89.00', rating: 4, reviews: 102 },
-    { id: 12, image: 'images/favapplewatch.png', title: 'Xiaomi Watch S1', price: '$70.00', rating: 3, reviews: 63 }
+    { id: 1, image: '/images/favapplewatch.png', title: 'Apple Watch Series 4', price: '$120.00', rating: 4, reviews: 131 },
+    { id: 2, image: '/images/favapplewatch.png', title: 'Samsung Galaxy Watch', price: '$99.00', rating: 5, reviews: 89 },
+    { id: 3, image: '/images/favapplewatch.png', title: 'Fitbit Versa 3', price: '$140.00', rating: 3, reviews: 56 },
+    { id: 4, image: '/images/favapplewatch.png', title: 'Garmin Venu Sq', price: '$110.00', rating: 4, reviews: 78 },
+    { id: 5, image: '/images/favapplewatch.png', title: 'Huawei Watch GT', price: '$89.00', rating: 4, reviews: 102 },
+    { id: 6, image: '/images/favapplewatch.png', title: 'Xiaomi Watch S1', price: '$70.00', rating: 3, reviews: 63 },
+    { id: 7, image: '/images/favapplewatch.png', title: 'Apple Watch Series 4', price: '$120.00', rating: 4, reviews: 131 },
+    { id: 8, image: '/images/favapplewatch.png', title: 'Samsung Galaxy Watch', price: '$99.00', rating: 5, reviews: 89 },
+    { id: 9, image: '/images/favapplewatch.png', title: 'Fitbit Versa 3', price: '$140.00', rating: 3, reviews: 56 },
+    { id: 10, image: '/images/favapplewatch.png', title: 'Garmin Venu Sq', price: '$110.00', rating: 4, reviews: 78 },
+    { id: 11, image: '/images/favapplewatch.png', title: 'Huawei Watch GT', price: '$89.00', rating: 4, reviews: 102 },
+    { id: 12, image: '/images/favapplewatch.png', title: 'Xiaomi Watch S1', price: '$70.00', rating: 3, reviews: 63 }
   ],
   order_data: [
     { id: "00001", name: "Christine Brooks", address: "089 Kutch Green Apt. 448", date: "14 Feb 2019", type: "Electric", status: "Completed" },
@@ -147,15 +147,15 @@ const data = {
     { id: "00019", name: "Clara Hughes", address: "401 Redwood Drive", date: "29 Aug 2019", type: "Mobile", status: "Processing" }
   ],
   product_stock: [
-    { image: 'images/applewatchseries4.png', name: "Apple Watch Series 4", category: "Digital Product", price: 690, piece: 63, colors: ["#000000", "#C0C0C0", "#E0B0B0"] },
-    { image: 'images/microsoftheadphones.png', name: "Microsoft Headsquare", category: "Digital Product", price: 190, piece: 13, colors: ["#000000", "#FF99CC", "#6699FF", "#FFD700"] },
-    { image: 'images/womendress.png', name: "Women's Dress", category: "Fashion", price: 640, piece: 635, colors: ["#800020", "#87CEEB", "#0000FF"] },
-    { image: 'images/samsunga50.png', name: "Samsung A50", category: "Mobile", price: 400, piece: 67, colors: ["#000080", "#000000", "#800020"] },
-    { image: 'images/camera.png', name: "Camera", category: "Electronic", price: 420, piece: 52, colors: ["#000080", "#800020", "#FF0000"] },
-    { image: 'images/microsoftheadphones.png', name: "Microsoft Headsquare", category: "Digital Product", price: 190, piece: 13, colors: ["#000000", "#FF99CC", "#6699FF", "#FFD700"] },
-    { image: 'images/womendress.png', name: "Women's Dress", category: "Fashion", price: 640, piece: 635, colors: ["#800020", "#87CEEB", "#0000FF"] },
-    { image: 'images/samsunga50.png', name: "Samsung A50", category: "Mobile", price: 400, piece: 67, colors: ["#000080", "#000000", "#800020"] },
-    { image: 'images/camera.png', name: "Camera", category: "Electronic", price: 420, piece: 52, colors: ["#000080", "#800020", "#FF0000"] }
+    { image: '/images/applewatchseries4.png', name: "Apple Watch Series 4", category: "Digital Product", price: 690, piece: 63, colors: ["#000000", "#C0C0C0", "#E0B0B0"] },
+    { image: '/images/microsoftheadphones.png', name: "Microsoft Headsquare", category: "Digital Product", price: 190, piece: 13, colors: ["#000000", "#FF99CC", "#6699FF", "#FFD700"] },
+    { image: '/images/womendress.png', name: "Women's Dress", category: "Fashion", price: 640, piece: 635, colors: ["#800020", "#87CEEB", "#0000FF"] },
+    { image: '/images/samsunga50.png', name: "Samsung A50", category: "Mobile", price: 400, piece: 67, colors: ["#000080", "#000000", "#800020"] },
+    { image: '/images/camera.png', name: "Camera", category: "Electronic", price: 420, piece: 52, colors: ["#000080", "#800020", "#FF0000"] },
+    { image: '/images/microsoftheadphones.png', name: "Microsoft Headsquare", category: "Digital Product", price: 190, piece: 13, colors: ["#000000", "#FF99CC", "#6699FF", "#FFD700"] },
+    { image: '/images/womendress.png', name: "Women's Dress", category: "Fashion", price: 640, piece: 635, colors: ["#800020", "#87CEEB", "#0000FF"] },
+    { image: '/images/samsunga50.png', name: "Samsung A50", category: "Mobile", price: 400, piece: 67, colors: ["#000080", "#000000", "#800020"] },
+    { image: '/images/camera.png', name: "Camera", category: "Electronic", price: 420, piece: 52, colors: ["#000080", "#800020", "#FF0000"] }
   ]
 };
 
