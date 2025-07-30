@@ -1,0 +1,1044 @@
+body.dark .calendar-section {
+    background-color: rgba(27, 36, 49, 1);
+}
+
+.calendar-section .title-box h3 {
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: rgba(32, 34, 36, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body.dark .calendar-section .title-box h3 {
+    color: white;
+}
+
+/* Кнопка "Today" */
+.fc-today-button {
+    text-transform: capitalize !important;
+}
+
+/* Основной контейнер календаря */
+.calendar {
+    width: 100%;
+    padding: 0;
+}
+
+/* --- ВЫРАВНИВАНИЕ СЕТКИ --- */
+.fc-scrollgrid-sync-table {
+    height: auto !important;
+    table-layout: fixed;
+    width: 100% !important;
+    /* убираем фиксированные размеры */
+}
+
+.fc-daygrid-body .fc-daygrid-body-unbalanced {
+    width: 100% !important;
+}
+
+/* Равномерно распределяем 6 строк */
+.fc-daygrid-body table tr {
+    height: calc(700px / 6);
+}
+
+.fc-timeGridWeek-view .fc-scroller,
+.fc-timeGridDay-view .fc-scroller {
+    max-height: 750px;
+    overflow-y: auto;
+}
+
+
+/* body.dark .fc, .fc *, .fc ::after, .fc ::before{
+background-color: ;
+} */
+
+/* Контейнер календаря */
+.fc {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: auto !important;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body.dark .fc {
+    background-color: rgba(39, 49, 66, 1);
+}
+
+.fc-theme-standard .fc-scrollgrid {
+    border: 0.4px solid var(--fc-border-color);
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+body.dark .fc-theme-standard .fc-scrollgrid {
+    border: 0.4px solid rgba(39, 49, 66, 1);
+}
+
+body.dark .fc-theme-standard td,
+tbody .fc-theme-standard th {
+    border: 1px solid rgba(57, 67, 81, 1) !important;
+    color: rgb(250, 250, 250);
+}
+
+body.dark .fc-day-other {
+    color: rgb(255, 255, 255) !important;
+    background: repeating-linear-gradient(45deg,
+            rgba(255, 255, 255, 0.05),
+            /* светлая полоса */
+            rgba(255, 255, 255, 0.05) 10px,
+            rgba(255, 255, 255, 0) 10px,
+            rgba(255, 255, 255, 0) 20px);
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+    border: none !important;
+}
+
+.fc-scrollgrid-sync-table,
+.fc-daygrid-body,
+.fc-daygrid {
+    height: auto !important;
+    min-height: unset !important;
+}
+
+.fc-scrollgrid-sync-inner {}
+
+/* Календарь в режиме Month растягивается на всю высоту родителя */
+.fc-dayGridMonth-view .fc-daygrid-body {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* 6 строк равной высоты, делим на всю высоту контейнера */
+.fc-dayGridMonth-view .fc-daygrid-body table {
+    height: 100% !important;
+}
+
+.fc-dayGridMonth-view .fc-daygrid-body table tr {
+    height: calc(100% / 6) !important;
+}
+
+/* Для week/day вида — прокрутка, но высота та же */
+.fc-timeGridWeek-view .fc-scroller,
+.fc-timeGridDay-view .fc-scroller {
+    max-height: none !important;
+    overflow-y: auto;
+}
+
+/* Тулбар (заголовок, кнопки) */
+.fc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+/* Верхняя панель (тулбар) */
+.fc-toolbar.fc-header-toolbar {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Левая часть (стрелки и Today) */
+.fc-toolbar-chunk:first-child {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Центр (заголовок месяца) */
+.fc-toolbar-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #202224;
+}
+
+/* Правая часть (Month/Week/Day кнопки) */
+.fc-toolbar-chunk:last-child .fc-button-group {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fafbfd;
+}
+
+body.dark .fc-toolbar-chunk:last-child .fc-button-group {
+    background-color: rgba(50, 61, 78, 1);
+    color: white !important;
+}
+
+.fc-toolbar-chunk:last-child .fc-button-group .fc-button {
+    background: transparent !important;
+    color: #333 !important;
+    padding: 8px 14px;
+    border-radius: 0 !important;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+body.dark .fc-toolbar-chunk:last-child .fc-button-group .fc-button {
+    color: white !important;
+}
+
+/* Активная кнопка (выбранный вид) */
+.fc-toolbar-chunk:last-child .fc-button-group .fc-button.fc-button-active {
+    background: #487fff !important;
+    color: #fff !important;
+}
+
+body.dark .fc-toolbar-chunk:last-child .fc-button-group .fc-button.fc-button-active {
+    background-color: rgba(90, 141, 255, 1) !important;
+    color: white !important;
+}
+
+/* Hover эффект */
+.fc-toolbar-chunk:last-child .fc-button-group .fc-button:hover {
+    background: #487fff !important;
+    color: #fff !important;
+}
+
+
+/* Заголовок месяца */
+.fc .fc-toolbar-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #202224;
+}
+
+body.dark .fc .fc-toolbar-title {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Верхняя панель календаря */
+.fc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    gap: 10px;
+}
+
+.fc-direction-ltr .fc-button-group>.fc-button:not(:last-child) {
+    display: flex;
+    font-size: 15px;
+    padding: 5px 5px;
+}
+
+.fc-direction-ltr .fc-button-group>.fc-button:not(:first-child) {
+    display: flex;
+    font-size: 15px;
+    padding: 5px 5px;
+}
+
+.fc-direction-ltr .fc-toolbar>*> :not(:first-child) {
+    margin-left: 1rem;
+    font-size: 15px;
+}
+
+.fc-direction-ltr .fc-toolbar>*> :not(:first-child) {
+    margin-left: 1em;
+    font-size: 15px;
+}
+
+.fc-toolbar-chunk:first-child .fc-prev-button,
+.fc-toolbar-chunk:first-child .fc-next-button {
+    margin-right: 10px;
+}
+
+.fc-direction-ltr .fc-toolbar>*> :not(:first-child):hover {
+    background: #487fff !important;
+    color: #fff !important;
+    opacity: 1;
+}
+
+/* Правая часть: кнопки Day / Week / Month */
+.fc-toolbar-chunk:last-child .fc-button-group {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(250, 251, 253, 1);
+}
+
+body.dark .fc-toolbar-chunk:last-child .fc-button-group {
+    border: 1px solid rgba(207, 207, 207, 0.1142) !important;
+}
+
+.fc .fc-button:focus {
+    box-shadow: none !important;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: rgba(193, 193, 247, 0.132);
+}
+
+/* Стиль табов */
+.fc-toolbar-chunk:last-child .fc-button-group .fc-button {
+    background: transparent !important;
+    color: #333 !important;
+    padding: 10px 15px;
+    border-radius: 0 !important;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+/* Активная кнопка */
+.fc-toolbar-chunk:last-child .fc-button-group .fc-button.fc-button-active {
+    background: #487fff !important;
+    color: #fff !important;
+}
+
+/* Разделитель между кнопками */
+.fc-toolbar-chunk:last-child .fc-button-group .fc-button+.fc-button {
+    border-right: 1px solid #e0e0e0 !important;
+}
+
+body.dark .fc-toolbar-chunk:last-child .fc-button-group .fc-button+.fc-button {
+    border-right: 1px solid rgba(207, 207, 207, 0.1142) !important;
+}
+
+/* Кнопка Today */
+.fc-today-button {
+    background: #f5f6fa !important;
+    border-radius: 8px !important;
+    padding: 6px 12px;
+    font-weight: 600;
+    border: none !important;
+    color: #333 !important;
+    transition: 0.2s;
+}
+
+.fc-today-button:hover {
+    background: #e6e8ef !important;
+}
+
+.fc-icon {
+    margin: auto;
+}
+
+.fc-icon:hover {
+    color: rgb(243, 243, 243);
+}
+
+/* Дни другого месяца (штриховка) */
+.fc-day-other {
+    background: repeating-linear-gradient(45deg,
+            #f9f9f9,
+            #f9f9f9 10px,
+            #f0f0f0 10px,
+            #f0f0f0 20px);
+}
+
+/* Числа дней */
+.fc-daygrid-day-number {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+/* Стили для кнопок переключения (день/неделя/месяц) */
+.fc-button {
+    border-radius: 8px !important;
+    background: #f5f6fa !important;
+    color: #333 !important;
+    border: none !important;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: 0.2s ease;
+}
+
+body.dark .fc-button {
+    background-color: rgba(50, 61, 78, 1) !important;
+    color: white !important;
+}
+
+.fc-button:hover {
+    background: rgba(90, 141, 255, 1) !important;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active:focus,
+.fc .fc-button-primary:not(:disabled):active:focus {
+    box-shadow: none;
+}
+
+.fc-button-active {
+    background: #487fff !important;
+    color: #fff !important;
+}
+
+/* Сетка ячеек */
+.fc-theme-standard td,
+.fc-theme-standard th {
+    border: 1px solid #f0f0f0;
+}
+
+.fc-theme-standard th {
+    background: rgba(241, 244, 249, 1);
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    font-weight: 600;
+    color: rgba(32, 34, 36, 1);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 7px 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+body.dark .fc-theme-standard th {
+    background-color: rgba(50, 61, 78, 1);
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(50, 61, 78, 1);
+}
+
+.fc-theme-standard td,
+tbody .fc-theme-standard th {
+    border: 1px solid var(--fc-border-color) !important;
+}
+
+.fc-col-header {
+    width: 100% !important;
+}
+
+.fc-daygrid-day-frame {
+    padding: 5px;
+}
+
+.fc-daygrid-event-harness.fc-daygrid-event-harness-abs {
+    right: 0 !important;
+}
+
+.fc-event {
+    background: transparent !important;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0 !important;
+    border: none !important;
+}
+
+.fc-daygrid-day-frame {
+    padding: 0;
+}
+
+.custom-event-fc {
+    color: white;
+    font-size: 12px;
+    padding: 10px 7px;
+    border-radius: 0 !important;
+    font-weight: 500;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    cursor: pointer !important;
+}
+
+.fc-direction-ltr .fc-daygrid-event.fc-event-start,
+.fc-direction-rtl .fc-daygrid-event.fc-event-end {
+    margin-left: 0;
+}
+
+.fc .fc-daygrid-event {
+    margin: 0;
+
+}
+
+.fc-daygrid-event {
+    border-radius: 0 !important;
+}
+
+.fc-daygrid-day-events {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fc-direction-ltr .fc-daygrid-event.fc-event-end,
+.fc-direction-rtl .fc-daygrid-event.fc-event-start {
+    margin-right: 0;
+}
+
+.event-popup {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 240px;
+    z-index: 1000;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body.dark .event-popup {
+    background: rgba(50, 61, 78, 1);
+    border: 1px solid rgba(49, 61, 79, 1);
+}
+
+.event-popup .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.popup-image {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.popup-content h4 {
+    margin: 0 0 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+body.dark .popup-content h4 {
+    color: white;
+}
+
+.popup-content p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+body.dark .popup-content p {
+    color: #EAECED;
+}
+
+.popup-avatars {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 15px;
+}
+
+.popup-avatars img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+}
+
+body.dark .popup-avatars img {
+    border: none
+}
+
+.popup-avatars span {
+    margin-left: 4px;
+    font-size: 10px;
+    color: rgba(72, 128, 255, 1);
+    border: 1px solid #4e73df;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Боковая панель --- */
+.calendar-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    height: auto;
+    flex: 1;
+    height: 90vh;
+}
+
+.calendar-sidebar {
+    flex: 0.25;
+    background: #fff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito Sans', sans-serif;
+
+    /* Убираем сжатие */
+    justify-content: flex-start;
+
+    /* Разрешаем прокрутку */
+    overflow-y: auto;
+    max-height: 90vh;
+    /* чтобы не вылазило за пределы */
+    padding: 20px 0;
+}
+
+body.dark .calendar-sidebar {
+    background-color: rgba(39, 49, 66, 1);
+}
+
+/* Календарь */
+/* Контейнер с календарем (сам FullCalendar) */
+.calendar {
+    flex: 0.75;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 16px;
+}
+
+.fc .fc-scroller-liquid-absolute {
+    overflow: hidden !important;
+}
+
+body.dark .calendar {
+    background-color: rgba(39, 49, 66, 1);
+}
+
+/* Кнопка добавления */
+.add-event-btn {
+    background: rgba(72, 128, 255, 1);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    margin: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.sidebar-title {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+body.dark .sidebar-title {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Заголовок и кнопка добавления всегда сверху */
+.add-event-btn,
+.sidebar-title {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 10зч 20px;
+}
+
+
+/* Список событий */
+.event-list {
+    margin: 0;
+    list-style: none;
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.event-item {
+    margin: 0 20px;
+    position: relative;
+    gap: 12px;
+    padding: 10px 0;
+}
+
+.event-divider {
+    width: 100%;
+    height: 0.6px;
+    background: #eee;
+    border: none;
+    margin: 0;
+}
+
+body.dark .event-divider {
+    background-color: rgba(224, 224, 224, 1);
+    height: 0.4px;
+}
+
+.event-main-avatar,
+.placeholder-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #ddd;
+    object-fit: cover;
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.event-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+}
+
+body.dark .event-title {
+    color: white;
+}
+
+.event-time,
+.event-location {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+body.dark .event-time,
+.event-location {
+    color: rgba(212, 214, 217, 1);
+}
+
+.event-avatars {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.participants {
+    margin-left: 6px;
+    font-size: 10px;
+    color: #4e73df;
+    border: 1px solid #4e73df;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.dark .participants {
+    color: rgba(72, 128, 255, 1);
+    border: 1px solid rgba(72, 128, 255, 1);
+}
+
+/* Кнопка "See more" */
+.see-more-btn {
+    position: sticky;
+    bottom: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    z-index: 2;
+    background: #f5f6fa;
+    color: rgba(32, 34, 36, 1);
+    border: none;
+    padding: 10px;
+    width: 125px;
+    border-radius: 10px;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.see-more-btn:hover {
+    background: #e6e8ef;
+}
+
+body.dark .see-more-btn {
+    background-color: rgba(61, 74, 95, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.color-options {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.color-circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.color-circle:hover {
+    transform: scale(1.1);
+}
+
+.color-circle.selected {
+    border-color: #585858;
+    transform: scale(1.2);
+}
+
+/* --- Модальное окно --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    animation: slideUp 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: 'Nunito Sans';
+}
+
+body.dark .modal-content {
+    background-color: rgba(49, 61, 79, 1);
+    color: white;
+}
+
+.modal-content h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+body.dark .modal-content h3 {
+    color: white;
+}
+
+/* --- Инпуты --- */
+.modal-content input[type="text"],
+.modal-content input[type="date"],
+.modal-content input[type="time"],
+.modal-content input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+    background-color: rgb(255, 255, 255);
+    color: #333;
+}
+
+body.dark .event-input {
+    color: white;
+    background-color: rgba(49, 61, 79, 1);
+}
+
+/* Белый текст и placeholder для первых двух input */
+body.dark .modal-content input:nth-of-type(1),
+body.dark .modal-content input:nth-of-type(2) {
+    color: white;
+    /* сам текст */
+
+}
+
+body.dark .modal-content input:nth-of-type(1)::placeholder,
+body.dark .modal-content input:nth-of-type(2)::placeholder {
+    color: white;
+    /* полупрозрачный белый */
+}
+
+/* Делаем иконку календаря белой */
+body.dark input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+/* Делаем иконку часов белой */
+body.dark input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.modal-content input {
+    font-family: 'Nunito Sans';
+}
+
+.modal-content input:focus {
+    border-color: #4CAF50;
+}
+
+/* --- Кнопки --- */
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.modal-actions button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.modal-actions button:first-child {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+body.dark .modal-actions button:first-child {
+    background-color: #13931a;
+    color: white;
+}
+
+.modal-actions button:last-child {
+    background-color: #f66969;
+    color: rgb(255, 250, 250);
+}
+
+body.dark .modal-actions button:last-child {
+    background-color: #e40f0f;
+    color: rgb(255, 255, 255);
+}
+
+/* --- Палитра цветов --- */
+.color-picker {
+    margin-top: 10px;
+}
+
+.color-picker p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+body.dark .color-picker p {
+    color: white;
+}
+
+.color-options {
+    display: flex;
+    gap: 10px;
+}
+
+.color-circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.color-circle:hover {
+    transform: scale(1.1);
+}
+
+.color-circle.selected {
+    border-color: #3f3f3f;
+    transform: scale(1.2);
+}
+
+/* --- Превью изображения --- */
+.image-preview img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+}
+
+body.dark .color-circle {
+    border: 2px solid transparent;
+}
+
+/* --- Анимации --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1280px) {
+    .calendar-section .title-box h3 {
+        font-size: 25px;
+    }
+
+    .add-event-btn {
+        font-size: 13px;
+        padding: 11px;
+    }
+
+    .sidebar-title {
+        font-size: 16px;
+    }
+
+    .event-main-avatar,
+    .placeholder-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .event-title {
+        font-size: 13px;
+    }
+}

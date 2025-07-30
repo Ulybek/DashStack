@@ -1,0 +1,187 @@
+body.dark .productstock-section {
+    background-color: rgba(27, 36, 49, 1);
+}
+
+.productstock-section .title-box h3 {
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: rgba(32, 34, 36, 1);
+}
+
+body.dark .productstock-section .title-box h3 {
+    color: white;
+}
+
+.productstock-section .higher-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productstock-section .higher-container .search-box {
+    width: 20vw;
+    height: 38px;
+    padding: 0 15px;
+    border: rgba(213, 213, 213, 1) solid 1px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.productstock-section .higher-container .search-box .search-icon {
+    flex-shrink: 0;
+    width: 16px !important;
+    height: 16px !important;
+    color: rgba(32, 34, 36, 1);
+}
+
+body.dark .productstock-section .higher-container .search-box {
+    background-color: rgba(50, 61, 78, 1);
+    border: 0.6px solid rgba(207, 207, 207, 0.1142)
+}
+
+.productstock-section .higher-container .search-box input {
+    outline: none;
+    border: none;
+    color: rgb(60, 60, 60);
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 1);
+    font-family: 'Nunito Sans';
+    font-weight: 300;
+}
+
+body.dark .productstock-section .higher-container .search-box input {
+    background-color: rgba(50, 61, 78, 1);
+    color: rgba(193, 197, 202, 1);
+}
+
+.box-table {
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+}
+
+.orders-table .thead tr {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.orders-table {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    font-size: 14px;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+.image-productstock {
+    width: 60px;
+}
+
+.orders-table__header {
+    text-align: left;
+    padding: 12px 30px;
+    font-weight: 750;
+    color: rgba(32, 34, 36, 1);
+}
+
+.orders-table__row {
+    border-top: 1px solid #e0e0e0;
+    font-weight: 500;
+    color: rgba(32, 34, 36, 1);
+}
+
+.orders-table__cell {
+    padding: 20px 30px;
+}
+
+.orders-table__cell .setting-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 0.6px solid #b3b3b3;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 35px;
+    width: 90px;
+}
+
+body.dark .orders-table__cell .setting-box {
+    background-color: rgba(50, 61, 78, 1);
+    border: 0.6px solid rgba(207, 207, 207, 0.1142)
+}
+
+.setting-box .stick {
+    width: 0.4px;
+    background-color: #c8c8c8;
+    height: 100%;
+}
+
+body.dark .setting-box .stick {
+    background-color: #b3b3b3;
+}
+
+.setting-btn {
+    flex: 1;
+    height: 100%;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+}
+
+.setting-btn img {
+    width: 16px;
+    height: 16px;
+}
+
+.pagination-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 10px;
+}
+
+.pagination-info {
+    font-size: 15px;
+    color: rgb(121, 121, 121);
+}
+
+.page-item {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: all 0.2s;
+    position: relative;
+    bottom: 5px;
+}
+
+.page-item:hover {
+    background-color: #e0e0e0;
+}
+
+.active {
+    background-color: #3f51b5;
+    color: white;
+    border-color: #3f51b5;
+}
+
+.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
