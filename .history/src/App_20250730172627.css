@@ -89,7 +89,7 @@ body.dark .header {
   min-width: 0;
 }
 
-.page-main-section-style {
+.page-main-section-style{
   display: grid;
   gap: 20px;
   padding: 30px 25px;
@@ -97,12 +97,12 @@ body.dark .header {
   font-family: 'Nunito Sans';
 }
 
-.main-content {
+.main-content{
   height: 100%;
   background-color: rgba(245, 246, 250, 1);
 }
 
-body.dark .main-content {
+body.dark .main-content{
   background-color: rgba(27, 36, 49, 1);
 }
 
@@ -166,7 +166,7 @@ body.dark .main-content {
     padding: 15px 15px !important;
   }
 
-  .title-box h3 {
+  .title-box h3{
     font-size: 22px !important;
   }
 }
@@ -177,24 +177,16 @@ body.dark ::-webkit-scrollbar {
 }
 
 body.dark ::-webkit-scrollbar-track {
-  background: #1e1e1e;
-  /* цвет фона трека */
+  background: #1e1e1e; /* цвет фона трека */
 }
 
 body.dark ::-webkit-scrollbar-thumb {
-  background: #555;
-  /* цвет ползунка */
+  background: #313131; /* цвет ползунка */
   border-radius: 4px;
 }
 
 body.dark ::-webkit-scrollbar-thumb:hover {
-  background: #777;
-  /* цвет при наведении */
-}
-
-body.dark {
-  scrollbar-width: thin;
-  scrollbar-color: #555 #1e1e1e;
+  background: #777; /* цвет при наведении */
 }
 
 @font-face {
