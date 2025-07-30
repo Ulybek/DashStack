@@ -12,8 +12,8 @@ const data = {
         { id: "dashboard", label: "Dashboard", icon: FaTachometerAlt, path: 'dashboard' },
         { id: "products", label: "Products", icon: FaBox, path: 'products' },
         { id: "favorites", label: "Favorites", icon: FaHeart, path: 'favorites' },
-        { id: "orderlists", label: "Order Lists", icon: FaList, path: 'orderlists' },
-        { id: "productstock", label: "Product Stock", icon: FaCubes, path: 'productstock' },
+        { id: "orderlists", label: "Order Lists", icon: FaList, path: '/orderlists' },
+        { id: "productstock", label: "Product Stock", icon: FaCubes, path: '/productstock' },
       ],
     },
     {
