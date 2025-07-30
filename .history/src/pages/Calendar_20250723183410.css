@@ -1,0 +1,314 @@
+.calendar-section {
+    background-color: #F2F2F2;
+    padding: 30px 25px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Nunito Sans';
+}
+
+body.dark .calendar-section {
+    background-color: rgba(27, 36, 49, 1);
+}
+
+.calendar-section .title-box h3 {
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: rgba(32, 34, 36, 1);
+}
+
+body.dark .calendar-section .title-box h3 {
+    color: white;
+}
+
+.title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.fc-today-button {
+    text-transform: capitalize !important;
+}
+
+.calendar {
+    width: 100%;
+    padding: 0;
+}
+
+/* Убираем старое фиксированное значение */
+.fc-scrollgrid-sync-table {
+    height: auto !important;
+}
+
+/* Высота сетки календаря */
+.fc-daygrid-body,
+.fc-daygrid {
+    min-height: 720px;
+    /* Регулируй под свой макет */
+    height: 720px;
+}
+
+/* Равномерное распределение строк (6 строк в месяце) */
+.fc-daygrid-body table tr {
+    height: calc(720px / 6);
+}
+
+/* Обертка календаря */
+.fc {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    height: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Заголовок и тулбар */
+.fc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+/* Дни другого месяца — полосы */
+.fc-day-other {
+    background: repeating-linear-gradient(45deg,
+            #f9f9f9,
+            #f9f9f9 10px,
+            #f0f0f0 10px,
+            #f0f0f0 20px);
+}
+
+/* Подписи дней (числа) */
+.fc-daygrid-day-number {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.fc-toolbar-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Кнопки переключения (день/неделя/месяц) */
+.fc-button {
+    border-radius: 8px !important;
+    background: #f5f6fa !important;
+    color: #333 !important;
+    border: none !important;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: 0.2s ease;
+}
+
+.fc-button:hover {
+    background: rgba(90, 141, 255, 1) !important;
+    border: none !important;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active:focus,
+.fc .fc-button-primary:not(:disabled):active:focus {
+    box-shadow: 0;
+}
+
+.fc-button-active {
+    background: #487fff !important;
+    color: #fff !important;
+}
+
+/* Сетка календаря */
+.fc-theme-standard td,
+.fc-theme-standard th {
+    border: 1px solid #f0f0f0;
+}
+
+.fc-theme-standard th {
+    background: #fafafa;
+    font-weight: 600;
+    color: #555;
+    font-size: 13px;
+    padding: 8px;
+}
+
+/* События внутри ячеек */
+.fc-event {
+    background: var(--event-color, #487fff);
+    border: none !important;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 6px;
+    padding: 4px 6px;
+    margin-top: 2px;
+}
+
+/* Сетка для "другого месяца" (синие линии) */
+.fc-day-other {
+    background: repeating-linear-gradient(45deg,
+            #f9f9f9,
+            #f9f9f9 10px,
+            #f0f0f0 10px,
+            #f0f0f0 20px);
+}
+
+
+.calendar-wrapper {
+    display: flex;
+    gap: 20px;
+    height: auto;
+}
+
+.calendar-sidebar {
+    width: 350px;
+    background: #fff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.add-event-btn {
+    background: rgba(72, 128, 255, 1);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    margin: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 25px;
+    transition: all 0.2s ease;
+}
+
+.add-event-btn:hover {
+    background: #3c5ec4;
+}
+
+.sidebar-title {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.event-list {
+    margin-right: 10px;
+    margin-left: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.event-item {
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: #fff;
+    padding: 10px 0;
+}
+
+.event-divider {
+    width: 100%;
+    height: 1px;
+    background: #eee;
+    border: none;
+    margin: 0;
+    /* убираем лишние отступы */
+}
+
+.event-icon {
+    flex-shrink: 0;
+}
+
+.event-main-avatar,
+.placeholder-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #ddd;
+    object-fit: cover;
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.event-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #222;
+}
+
+.event-time {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.event-location {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.event-avatars {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    object-fit: cover;
+
+}
+
+.participants {
+    margin-left: 6px;
+    font-size: 10px;
+    color: #4e73df;
+    border: 1px solid #4e73df;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.see-more-btn {
+    margin: 20px auto;
+    background: #f5f6fa;
+    color: rgba(32, 34, 36, 1);
+    border: none;
+    padding: 10px;
+    width: 125px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.see-more-btn:hover {
+    background: #e6e8ef;
+}

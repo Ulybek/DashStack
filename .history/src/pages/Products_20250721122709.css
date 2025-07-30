@@ -1,0 +1,94 @@
+.products-section {
+    background-color: #F2F2F2;
+    height: 100%;
+    padding: 30px 25px;
+}
+
+.products-section .title-box h3 {
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: rgba(32, 34, 36, 1);
+}
+
+.slides-container {
+    max-width: 80vw;
+    margin: 0 auto;
+  
+}
+
+.slides-container .splide__slide {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #3986fb;
+    border-radius: 16px;
+    padding: 20px 40px;
+    height: 350px;
+    color: white;
+    text-align: left;
+}
+
+.slide-content {
+    
+}
+
+.date-text {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.slide-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 12px 0;
+    line-height: 1.3;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 24px;
+}
+
+.cta-button {
+    background-color: #ff9333;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff7a00;
+}
+
+.splide__arrow {
+    background: rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    transition: 0.3s ease;
+}
+
+.splide__arrow:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.splide__arrow svg {
+    fill: white;
+    width: 14px;
+    height: 14px;
+}
+
+.splide__arrow--prev {}

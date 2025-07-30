@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  transition: all 0.3s, color 0.3s;
+}
+
+body,
+.header,
+.navbar-menu-2,
+.search,
+.language-text,
+.profile-name,
+.profile-role,
+.burger-icon,
+.search-icon,
+.message-icon,
+.dropdown-icon {
+  transition: all ease 0.4s;
+}
+
+/* Общие настройки */
+body.dark {
+  background-color: rgba(39, 49, 66, 1);
+}
+
+body.dark .main {
+  background-color: rgba(27, 36, 49, 1);
+}
+
+/* Сайдбар */
+body.dark .aside {
+  background-color: rgba(39, 49, 66, 1);
+  color: #f1f1f1;
+}
+
+body.dark .aside .ul_main li a.active {
+  color: #fff;
+}
+
+/* Header */
+body.dark .header {
+  background-color: rgba(39, 49, 66, 1);
+}
+
+.Page {
+  display: flex;
+  position: relative;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+  transition: margin-left 0.3s ease;
+}
+
+.aside {
+  width: 230px;
+  height: 100vh;
+  /* занимает всю высоту экрана */
+  overflow-y: auto;
+  background-color: var(--sidebar-bg);
+  transition: 0.3s ease;
+  overflow-y: scroll;
+  /* или auto */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE и Edge */
+}
+
+.aside.open {
+  transform: translateX(0);
+}
+
+.aside.closed {
+  transform: translateX(-100%);
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 1280px) {
+  .aside {
+    width: 210px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .aside {
+    width: 190px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aside {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: 0.3s ease;
+    background: #fff;
+    z-index: 1000;
+    height: 100vh;
+    overflow-y: auto;
+    box-shadow: 4px 0 16px rgba(0, 0, 0, 0.15);
+  }
+
+  body.dark .aside {
+    box-shadow: 2px 0 8px rgba(255, 255, 255, 0.05);
+  }
+
+  .aside.open {
+    transform: translateX(0);
+  }
+
+  .main .header {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* Тень вниз */
+  }
+
+  .dashboard-section {
+    padding: 25px 20px !important;
+  }
+}
+
+
+@media (max-width: 479px) {
+  .dashboard-section {
+    padding: 25px 20px !important;
+  }
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url('/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype');
+  font-weight: 200 1000;
+  font-style: normal;
+}

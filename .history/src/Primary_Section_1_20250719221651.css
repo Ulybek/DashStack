@@ -1,0 +1,76 @@
+.primary-section-1 {
+    background-color: #F2F2F2;
+    height: 100%;
+    padding: 30px 25px;
+}
+
+.primary-section-1 .title-box h3 {
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: rgba(32, 34, 36, 1);
+    margin-bottom: 25px;
+}
+
+.total-objects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, auto));
+    gap: 15px;
+}
+
+.total-objects .card {
+    width: 18.5vw;
+    height: 160px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    font-family: 'Nunito Sans';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.total-objects .card .upper-card{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.total-objects .card .upper-card img {
+    width: 60px;
+}
+
+.total-objects .card .upper-card .text-box h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(60, 60, 60);
+}
+
+.total-objects .card .upper-card .text-box h2{
+    padding-top: 15px;
+    font-size: 27px;
+    font-weight: 700;
+    color: rgb(60, 60, 60);
+}
+
+.total-objects .card .down-card{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+}
+
+.total-objects .card .down-card img {
+    width: 24px;
+}
+
+.total-objects .card .down-card span{
+    color: rgba(0, 182, 155, 1);
+    font-weight: 600;
+}
+
+.total-objects .card .down-card p{
+    color: rgb(60, 60, 60);
+    font-weight: 400;
+}

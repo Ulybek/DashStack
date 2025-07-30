@@ -1,0 +1,177 @@
+.products-section {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: #F2F2F2;
+    padding: 30px 25px;
+    height: 100%;
+    font-family: 'Nunito Sans';
+}
+
+body.dark .products-section {
+    background-color: rgba(27, 36, 49, 1);
+}
+
+/* Заголовок секции */
+.products-section .title-box h3 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: rgba(32, 34, 36, 1);
+}
+
+body.dark .products-section .title-box h3 {
+    color: white;
+}
+
+/* Секция событий */
+.events-container {
+    max-width: 80vw;
+    margin-bottom: 30px;
+}
+
+.events-container .splide__slide {
+    display: flex;
+    align-items: center;
+    background-color: #3986FB;
+    border-radius: 16px;
+    padding: 20px 40px;
+    height: 350px;
+    color: white;
+    text-align: left;
+}
+
+/* Секция с карточками продуктов */
+.product-carousel-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Карточка товара */
+.product-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s ease;
+}
+
+body.dark .product-card {
+    background-color: rgba(39, 49, 66, 1);
+}
+
+/* Верхняя часть с картинкой */
+.product-top {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Кнопка избранного */
+.fav-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+body.dark .fav-btn {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.fav-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.fav-btn:active {
+    transform: scale(0.9);
+}
+
+/* Нижняя часть карточки */
+.product-info {
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Тексты */
+.product-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0 4px;
+}
+
+body.dark .product-title {
+    color: white;
+}
+
+.product-price {
+    font-size: 15px;
+    color: #2980f0;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+body.dark .product-price {
+    color: rgba(96, 145, 255, 1);
+}
+
+.product-rating {
+    font-size: 14px;
+    color: #ffb400;
+    margin-bottom: 16px;
+}
+
+.review-count {
+    color: #555;
+    margin-left: 6px;
+    font-size: 13px;
+}
+
+body.dark .review-count {
+    color: #D4D6D9;
+}
+
+/* Кнопка редактирования */
+.edit-button {
+    font-family: 'Nunito Sans';
+    background-color: rgba(226, 234, 248, 1);
+    color: rgba(32, 34, 36, 1);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 550;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+body.dark .edit-button {
+    background-color: rgba(75, 86, 104, 1);
+    color: rgb(230, 230, 230);
+}
+
+.edit-button:hover {
+    background-color: #e0e3e8;
+}

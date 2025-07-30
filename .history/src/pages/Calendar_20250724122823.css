@@ -1,0 +1,378 @@
+.calendar-section {
+    background-color: #F2F2F2;
+    padding: 30px 25px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Nunito Sans';
+}
+
+body.dark .calendar-section {
+    background-color: rgba(27, 36, 49, 1);
+}
+
+.calendar-section .title-box h3 {
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: rgba(32, 34, 36, 1);
+}
+
+body.dark .calendar-section .title-box h3 {
+    color: white;
+}
+
+.title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Кнопка "Today" */
+.fc-today-button {
+    text-transform: capitalize !important;
+}
+
+/* Основной контейнер календаря */
+.calendar {
+    width: 100%;
+    padding: 0;
+}
+
+
+/* --- ВЫРАВНИВАНИЕ СЕТКИ --- */
+.fc-scrollgrid-sync-table {
+    height: auto !important;
+    /* убираем фиксированные размеры */
+}
+
+/* Равномерно распределяем 6 строк */
+.fc-daygrid-body table tr {
+    height: calc(10px / 6);
+}
+
+/* Контейнер календаря */
+.fc {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+   
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Тулбар (заголовок, кнопки) */
+.fc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+/* Заголовок месяца */
+.fc .fc-toolbar-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #202224;
+}
+
+/* Верхняя панель календаря */
+.fc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    gap: 10px;
+}
+
+.fc-direction-ltr .fc-button-group>.fc-button:not(:last-child) {
+    font-size: 15px;
+    padding: 5px 8px;
+}
+
+.fc-direction-ltr .fc-button-group>.fc-button:not(:first-child) {
+    font-size: 15px;
+    padding: 5px 5px;
+}
+
+.fc-direction-ltr .fc-toolbar>*> :not(:first-child) {
+    margin-left: 1rem;
+    font-size: 15px;
+}
+
+.fc-direction-ltr .fc-toolbar>*> :not(:first-child) {
+    margin-left: 1em;
+    font-size: 15px;
+}
+
+.fc-toolbar-chunk:first-child .fc-prev-button,
+.fc-toolbar-chunk:first-child .fc-next-button {
+  margin-right: 10px;
+}
+
+.fc-direction-ltr .fc-toolbar>*> :not(:first-child):hover {
+    background: #487fff !important;
+    color: #fff !important;
+    opacity: 1;
+}
+
+
+/* Правая часть: кнопки Day / Week / Month */
+.fc-toolbar-chunk:last-child .fc-button-group {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(250, 251, 253, 1);
+}
+
+/* Стиль табов */
+.fc-toolbar-chunk:last-child .fc-button-group .fc-button {
+    background: transparent !important;
+    color: #333 !important;
+    padding: 10px 15px;
+    border-radius: 0 !important;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+/* Активная кнопка */
+.fc-toolbar-chunk:last-child .fc-button-group .fc-button.fc-button-active {
+    background: #487fff !important;
+    color: #fff !important;
+}
+
+/* Разделитель между кнопками */
+.fc-toolbar-chunk:last-child .fc-button-group .fc-button+.fc-button {
+    border-left: 1px solid #e0e0e0 !important;
+}
+
+/* Кнопка Today */
+.fc-today-button {
+    background: #f5f6fa !important;
+    border-radius: 8px !important;
+    padding: 6px 12px;
+    font-weight: 600;
+    border: none !important;
+    color: #333 !important;
+    transition: 0.2s;
+}
+
+.fc-today-button:hover {
+    background: #e6e8ef !important;
+}
+
+/* Дни другого месяца (штриховка) */
+.fc-day-other {
+    background: repeating-linear-gradient(45deg,
+            #f9f9f9,
+            #f9f9f9 10px,
+            #f0f0f0 10px,
+            #f0f0f0 20px);
+}
+
+/* Числа дней */
+.fc-daygrid-day-number {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+/* Стили для кнопок переключения (день/неделя/месяц) */
+.fc-button {
+    border-radius: 8px !important;
+    background: #f5f6fa !important;
+    color: #333 !important;
+    border: none !important;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: 0.2s ease;
+}
+
+.fc-button:hover {
+    background: rgba(90, 141, 255, 1) !important;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active:focus,
+.fc .fc-button-primary:not(:disabled):active:focus {
+    box-shadow: none;
+}
+
+.fc-button-active {
+    background: #487fff !important;
+    color: #fff !important;
+}
+
+/* Сетка ячеек */
+.fc-theme-standard td,
+.fc-theme-standard th {
+    border: 1px solid #f0f0f0;
+}
+
+.fc-theme-standard th {
+    background: #fafafa;
+    font-weight: 600;
+    color: #555;
+    font-size: 13px;
+    padding: 8px;
+}
+
+/* События */
+.fc-event {
+    background: var(--event-color, #487fff);
+    border: none !important;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 6px;
+    padding: 4px 6px;
+    margin-top: 2px;
+}
+
+/* --- Боковая панель --- */
+.calendar-wrapper {
+    display: flex;
+    gap: 20px;
+    height: auto;
+}
+
+.calendar-sidebar {
+    width: 350px;
+    background: #fff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Кнопка добавления */
+.add-event-btn {
+    background: rgba(72, 128, 255, 1);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    margin: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 25px;
+    transition: all 0.2s ease;
+}
+
+.add-event-btn:hover {
+    background: #3c5ec4;
+}
+
+.sidebar-title {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Список событий */
+.event-list {
+    margin: 0 10px;
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.event-item {
+    margin: 0 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+}
+
+.event-divider {
+    width: 100%;
+    height: 1px;
+    background: #eee;
+    border: none;
+    margin: 0;
+}
+
+.event-main-avatar,
+.placeholder-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #ddd;
+    object-fit: cover;
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.event-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #222;
+}
+
+.event-time,
+.event-location {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.event-avatars {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    object-fit: cover;
+}
+
+.participants {
+    margin-left: 6px;
+    font-size: 10px;
+    color: #4e73df;
+    border: 1px solid #4e73df;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Кнопка "See more" */
+.see-more-btn {
+    margin: 20px auto;
+    background: #f5f6fa;
+    color: rgba(32, 34, 36, 1);
+    border: none;
+    padding: 10px;
+    width: 125px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.see-more-btn:hover {
+    background: #e6e8ef;
+}

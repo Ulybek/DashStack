@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  transition: all 0.3s, color 0.3s;
+}
+
+body,
+.header,
+.navbar-menu-2,
+.search,
+.language-text,
+.profile-name,
+.profile-role,
+.burger-icon,
+.search-icon,
+.message-icon,
+.dropdown-icon {
+  transition: all ease 0.4s;
+}
+
+/* Общие настройки */
+body.dark {
+  background-color: rgba(39, 49, 66, 1);
+}
+
+body.dark .main {
+  background-color: rgba(27, 36, 49, 1);
+}
+
+/* Сайдбар */
+body.dark .aside {
+  background-color: rgba(39, 49, 66, 1);
+  color: #f1f1f1;
+}
+
+body.dark .aside .ul_main li a.active {
+  color: #fff;
+}
+
+/* Header */
+body.dark .header {
+  background-color: rgba(39, 49, 66, 1);
+}
+
+.Page {
+  display: flex;
+}
+
+.aside {
+  flex: 0 0 230px;
+  transition: transform 0.3s ease;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+}
+
+
+@media (max-width: 1280px) {
+  .aside {
+    flex: 0 0 210px;
+
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .aside {
+    flex: 0 0 190px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .Page {
+   
+  
+  }
+
+
+  .main {
+    flex: 1;
+  }
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url('/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype');
+  font-weight: 200 1000;
+  font-style: normal;
+}

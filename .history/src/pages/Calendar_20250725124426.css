@@ -1,0 +1,414 @@
+/* ============================= */
+/*         ОБЩИЕ СТИЛИ           */
+/* ============================= */
+
+.calendar-section {
+    background-color: #F2F2F2;
+    padding: 30px 25px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Nunito Sans';
+}
+
+body.dark .calendar-section {
+    background-color: rgba(27, 36, 49, 1);
+}
+
+.calendar-section .title-box h3 {
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: rgba(32, 34, 36, 1);
+}
+
+body.dark .calendar-section .title-box h3 {
+    color: white;
+}
+
+.title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Кнопка "Today" */
+.fc-today-button {
+    text-transform: capitalize !important;
+}
+
+
+/* ============================= */
+/*       КАЛЕНДАРЬ (основной)    */
+/* ============================= */
+
+.calendar {
+    width: 100%;
+    padding: 0;
+    flex: 0.75;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 16px;
+}
+
+body.dark .calendar {
+    background-color: rgba(39, 49, 66, 1);
+}
+
+.fc {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: auto !important;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body.dark .fc {
+    background-color: rgba(39, 49, 66, 1);
+}
+
+.fc-theme-standard .fc-scrollgrid {
+    border: 0.4px solid var(--fc-border-color);
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+body.dark .fc-theme-standard .fc-scrollgrid {
+    border: 0.4px solid rgba(39, 49, 66, 1);
+}
+
+.fc-scrollgrid-sync-table {
+    height: auto !important;
+    table-layout: fixed;
+    width: 100%;
+}
+
+/* Равномерно распределяем 6 строк */
+.fc-daygrid-body table tr {
+    height: calc(700px / 6);
+}
+
+.fc-scrollgrid-sync-table,
+.fc-daygrid-body,
+.fc-daygrid {
+    height: auto !important;
+    min-height: unset !important;
+}
+
+/* Для month-вида — равномерные строки */
+.fc-dayGridMonth-view .fc-daygrid-body table tr {
+    height: calc(100% / 6) !important;
+}
+
+
+/* ============================= */
+/*        ТУЛБАР (панель)        */
+/* ============================= */
+
+.fc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.fc-toolbar.fc-header-toolbar {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Левая часть (стрелки и Today) */
+.fc-toolbar-chunk:first-child {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Заголовок */
+.fc-toolbar-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #202224;
+}
+
+body.dark .fc .fc-toolbar-title {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Кнопки переключения (Month/Week/Day) */
+.fc-toolbar-chunk:last-child .fc-button-group {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fafbfd;
+}
+
+body.dark .fc-toolbar-chunk:last-child .fc-button-group {
+    background-color: rgba(50, 61, 78, 1);
+    color: white !important;
+}
+
+/* Кнопки */
+.fc-toolbar-chunk:last-child .fc-button-group .fc-button {
+    background: transparent !important;
+    color: #333 !important;
+    padding: 8px 14px;
+    border-radius: 0 !important;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+body.dark .fc-toolbar-chunk:last-child .fc-button-group .fc-button {
+    color: white !important;
+}
+
+/* Активная */
+.fc-toolbar-chunk:last-child .fc-button-group .fc-button.fc-button-active {
+    background: #487fff !important;
+    color: #fff !important;
+}
+
+body.dark .fc-toolbar-chunk:last-child .fc-button-group .fc-button.fc-button-active {
+    background-color: rgba(90, 141, 255, 1) !important;
+    color: white !important;
+}
+
+/* Hover эффект */
+.fc-toolbar-chunk:last-child .fc-button-group .fc-button:hover {
+    background: #487fff !important;
+    color: #fff !important;
+}
+
+
+/* ============================= */
+/*     СЕТКА И ДНИ (таблица)     */
+/* ============================= */
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+    border: 1px solid #f0f0f0;
+}
+
+.fc-theme-standard th {
+    background: rgba(241, 244, 249, 1);
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    font-weight: 600;
+    color: rgba(32, 34, 36, 1);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 7px 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+body.dark .fc-theme-standard th {
+    background-color: rgba(50, 61, 78, 1);
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(50, 61, 78, 1);
+}
+
+/* Дни другого месяца (штриховка) */
+.fc-day-other {
+    background: repeating-linear-gradient(45deg,
+            #f9f9f9,
+            #f9f9f9 10px,
+            #f0f0f0 10px,
+            #f0f0f0 20px);
+}
+
+
+/* ============================= */
+/*        СОБЫТИЯ (event)        */
+/* ============================= */
+
+.fc-event {
+    background: transparent !important;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0 !important;
+    border: none !important;
+}
+
+.custom-event-fc {
+    color: white;
+    font-size: 12px;
+    padding: 10px 7px;
+    border-radius: 0 !important;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+
+/* ============================= */
+/*        ПОПАП (подсказки)      */
+/* ============================= */
+
+.event-popup {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 240px;
+    z-index: 1000;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body.dark .event-popup {
+    background: rgba(50, 61, 78, 1);
+    border: 1px solid rgba(49, 61, 79, 1);
+}
+
+/* Содержимое */
+.popup-content h4 {
+    margin: 0 0 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+body.dark .popup-content h4 {
+    color: white;
+}
+
+.popup-content p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+body.dark .popup-content p {
+    color: #EAECED;
+}
+
+
+/* ============================= */
+/*       САЙДБАР (список)        */
+/* ============================= */
+
+.calendar-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    height: auto;
+    overflow-x: auto;
+    flex: 1;
+    height: 90vh;
+}
+
+.calendar-sidebar {
+    flex: 0.25;
+    background: #fff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    max-height: 90vh;
+    padding: 20px 0;
+}
+
+body.dark .calendar-sidebar {
+    background-color: rgba(39, 49, 66, 1);
+}
+
+/* Заголовки и кнопки */
+.add-event-btn {
+    background: rgba(72, 128, 255, 1);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    margin: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+
+/* ============================= */
+/*    МОДАЛЬНОЕ ОКНО (форма)     */
+/* ============================= */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    animation: slideUp 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: 'Nunito Sans';
+}
+
+body.dark .modal-content {
+    background-color: rgba(49, 61, 79, 1);
+    color: white;
+}
+
+
+/* ============================= */
+/*           АНИМАЦИИ            */
+/* ============================= */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,13 @@
+.primary-section-1{
+    background-color: #F2F2F2;
+    height: 100%;
+    padding: 30px 25px;
+}
+
+.primary-section-1 .title-box h3{
+    font-family: 'Nunito Sans';
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: rgba(32, 34, 36, 1);
+}

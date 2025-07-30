@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  transition: all 0.3s, color 0.3s;
+}
+
+/* Общие настройки */
+body.dark {
+  background-color: rgba(39, 49, 66, 1);
+}
+
+body.dark .main{
+  background-color: rgba(27, 36, 49, 1);
+}
+
+/* Сайдбар */
+body.dark .aside {
+  background-color: rgba(39, 49, 66, 1);
+  color: #f1f1f1;
+}
+
+body.dark .aside .ul_main li a.active {
+  color: #fff;
+}
+
+/* Header */
+body.dark .header {
+  background-color: rgba(39, 49, 66, 1);
+}
+
+.Page {
+  display: flex;
+}
+
+.aside {
+  flex: 0.17;
+}
+
+.main {
+  flex: 0.83;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url('/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype');
+  font-weight: 200 1000;
+  font-style: normal;
+}

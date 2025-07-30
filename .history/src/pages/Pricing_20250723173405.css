@@ -1,0 +1,22 @@
+.pricing-section {
+    background-color: #F2F2F2;
+    padding: 30px 40px 30px 25px;
+    height: 100%;
+    font-family: 'Nunito Sans';
+}
+
+body.dark .pricing-section {
+    background-color: rgba(27, 36, 49, 1);
+}
+
+.pricing-section .title-box h3 {
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: rgba(32, 34, 36, 1);
+}
+
+body.dark .pricing-section .title-box h3 {
+    color: white;
+}

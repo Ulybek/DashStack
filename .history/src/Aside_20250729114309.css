@@ -1,0 +1,209 @@
+/* Базовая структура на десктопе */
+.aside {
+    transition: all 0.3s ease;
+}
+
+.navbar-menu-1 {
+    border-right: solid rgba(224, 224, 224, 1) 1px;
+}
+
+.outer-block-navbar .logo-heading {
+    display: flex;
+    height: 70px;
+}
+
+.outer-block-navbar .logo-heading h3 {
+    margin: auto;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+}
+
+/* Светлая тема (по умолчанию) */
+.logo-heading h3 span {
+    color: #3986FB;
+}
+
+/* Тёмная тема */
+body.dark .logo-heading h3 span {
+    color: rgba(72, 128, 255, 1);
+}
+
+.ul_main {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(40px, auto));
+    gap: 10px;
+}
+
+.ul_main li {
+    list-style: none;
+}
+
+.ul_main a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 17px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.ul_main a:hover {
+    background-color: rgba(57, 134, 251, 0.1);
+}
+
+.ul_main a.active {
+    background-color: #3986FB;
+    color: white;
+}
+
+/* Стили для иконок (react-icons) */
+.icon-box {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/* Иконки в активном пункте */
+.ul_main a.active .menu-icon {
+    color: white;
+}
+
+/* Текст в пункте меню */
+.ul_main a h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+/* Линия-разделитель */
+.ul_main .stick {
+    border: solid rgba(224, 224, 224, 1) 0.1px;
+    margin: 10px 0;
+}
+
+/* Заголовки секций (PAGES) */
+.aside-section {
+    padding: 0 20px;
+}
+
+.aside-section p {
+    font-size: 12px;
+    padding: 0 0 15px 14px;
+    font-family: 'Nunito Sans';
+    color: #797A7C;
+    font-weight: 630;
+}
+
+/* DARK MODE стили */
+body.dark .navbar-menu-1 {
+    border-right: 1px solid rgba(39, 49, 66, 1);
+}
+
+body.dark .aside .ul_main li a {
+    color: rgba(255, 255, 255, 1);
+}
+
+body.dark .ul_main a.active {
+    background-color: #3986FB;
+    color: #fff;
+}
+
+.ul_main a:hover {
+    background-color: transparent;
+}
+
+.ul_main a:hover {
+    background-color: transparent;
+    color: inherit;
+}
+
+.ul_main a:hover .menu-icon {
+    color: inherit;
+}
+
+.ul_main a.active {
+    background-color: #3986FB;
+    color: white;
+}
+
+.ul_main a.active .menu-icon {
+    color: white;
+}
+
+body.dark .menu-icon {
+    color: #cecece;
+}
+
+body.dark .ul_main a.active .menu-icon {
+    color: #fff;
+}
+
+body.dark .aside-section p {
+    color: #999;
+}
+
+@media (max-width: 1280px) {
+    .aside-section {
+        padding: 0 20px;
+    }
+
+    .ul_main a {
+        gap: 16px;
+        padding: 17px 12px;
+    }
+
+    .ul_main a h4 {
+        font-size: 13.5px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .aside-section {
+        padding: 0 15px;
+    }
+
+    .ul_main a {
+        gap: 15px;
+        padding: 16px 12px;
+    }
+
+    .ul_main a h4 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .outer-block-navbar .logo-heading {
+        height: 60px;
+    }
+
+    .outer-block-navbar .logo-heading h3 {
+        font-size: 19px;
+    }
+
+    .aside-section {
+        padding: 0 20px;
+    }
+
+    .navbar-menu-1{
+       padding-bottom: 25px;
+    }
+
+    .ul_main a {
+        gap: 15px;
+        padding: 16px 15px;
+    }
+}

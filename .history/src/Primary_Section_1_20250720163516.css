@@ -1,0 +1,111 @@
+.primary-section-1 {
+    background-color: #F2F2F2;
+    height: 100%;
+    padding: 30px 25px;
+}
+
+.primary-section-1 .title-box h3 {
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: rgba(32, 34, 36, 1);
+    margin-bottom: 25px;
+}
+
+.total-objects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, auto));
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.total-objects .card {
+    width: 19vw;
+    height: 160px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    font-family: 'Nunito Sans';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.total-objects .card .upper-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.total-objects .card .upper-card img {
+    width: 60px;
+}
+
+.total-objects .card .upper-card .text-box h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(60, 60, 60);
+}
+
+.total-objects .card .upper-card .text-box h2 {
+    padding-top: 15px;
+    font-size: 27px;
+    font-weight: 700;
+    color: rgb(60, 60, 60);
+}
+
+.total-objects .card .down-card {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+}
+
+.total-objects .card .down-card img {
+    width: 25px;
+}
+
+.total-objects .card .down-card span {
+    color: rgba(0, 182, 155, 1);
+    font-weight: 600;
+}
+
+.total-objects .card .down-card p {
+    color: rgb(60, 60, 60);
+    font-weight: 400;
+}
+
+.chart-container {
+    font-family: 'Nunito Sans';
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px;
+    height: 440px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.recharts-responsive-container {
+    padding: 0 20px 30px 20px;
+}
+
+.sales-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.sales-header h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(32, 34, 36, 1);
+    padding-left: 20px;
+}
+
+.select-button {
+    margin-right: 24px;
+    font-family: 'Nunito Sans';
+    color: rgba(43, 48, 52, 0.4);
+}

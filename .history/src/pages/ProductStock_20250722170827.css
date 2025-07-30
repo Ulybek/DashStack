@@ -1,0 +1,48 @@
+.productstock-section {
+    background-color: #F2F2F2;
+    padding: 30px 40px 30px 25px;
+    height: 100%;
+    font-family: 'Nunito Sans';
+}
+
+.productstock-section .title-box h3 {
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: rgba(32, 34, 36, 1);
+}
+
+.productstock-section .higher-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.productstock-section .higher-container .search-box {
+    width: 16vw;
+    height: 38px;
+    padding: 0 15px;
+    border: rgba(213, 213, 213, 1) solid 1px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.productstock-section .higher-container .search-box img {
+    width: 16px;
+    position: relative;
+    bottom: 1.5px;
+}
+
+.productstock-section .higher-container .search-box input {
+    outline: none;
+    border: none;
+    color: rgb(60, 60, 60);
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 1);
+    font-family: 'Nunito Sans';
+    font-weight: 300;
+}
