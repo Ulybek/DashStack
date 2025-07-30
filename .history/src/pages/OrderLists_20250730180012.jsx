@@ -6,10 +6,6 @@ import { createPopper } from "@popperjs/core";
 import "react-datepicker/dist/react-datepicker.css";
 import "react-paginate/theme/basic/react-paginate.css";
 import data from "../data.js";
-import filterIconLight from "/images/filter-icon-light.png";
-import filterIconDark from "/images/filter-icon-dark.png";
-import resetIconOrange from "/images/reset-icon-orange.png";
-import resetIconRed from "/images/reset-icon-red.png";
 import "/src/pages/OrderLists.css";
 
 export default function OrdersTable({ darkMode, setDarkMode }) {
@@ -196,7 +192,7 @@ export default function OrdersTable({ darkMode, setDarkMode }) {
                             {/* Иконка фильтра */}
                             <td className="filter-cell">
                                 <img
-                                    src={darkMode ? filterIconLight : filterIconDark}
+                                    src={darkMode ? "/images/filter-icon-light.png" : "/images/filter-icon-dark.png"}
                                     alt="Filter"
                                     className="filter-icon"
                                 />
@@ -308,7 +304,7 @@ export default function OrdersTable({ darkMode, setDarkMode }) {
                             <td className="filter-cell reset-cell">
                                 <button className="reset-filter-button" onClick={resetFilters}>
                                     <img
-                                        src={darkMode ? resetIconOrange : resetIconRed}
+                                        src={darkMode ? "/images/reset-icon-orange.png" : "/images/reset-icon-red.png"}
                                         alt="Reset"
                                         className="icon-reset"
                                     />

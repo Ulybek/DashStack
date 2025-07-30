@@ -6,7 +6,7 @@ import { createPopper } from "@popperjs/core";
 import "react-datepicker/dist/react-datepicker.css";
 import "react-paginate/theme/basic/react-paginate.css";
 import data from "../data.js";
-import filterIconLight from "/images/filter-icon-light.png";
+import filterIconLight from "//images/filter-icon-light.png";
 import filterIconDark from "/images/filter-icon-dark.png";
 import resetIconOrange from "/images/reset-icon-orange.png";
 import resetIconRed from "/images/reset-icon-red.png";

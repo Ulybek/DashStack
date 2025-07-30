@@ -20,7 +20,7 @@ export default function Calendar() {
             location: '56 Davion Mission Suite 157, Meaghanberg',
             participants: 15,
             avatars: [avatar3],
-            image: eventImage,
+            image: '/images/calendar-event-image.png',
             color: '#6C63FF'
         },
         {
@@ -30,7 +30,7 @@ export default function Calendar() {
             location: '853 Moore Flats Suite 158, Sweden',
             participants: 20,
             avatars: [avatar3, avatar2],
-            image: eventImage,
+            image: '/images/calendar-event-image.png',
             color: '#FF6B6B'
         },
         {
@@ -41,7 +41,7 @@ export default function Calendar() {
             location: '646 Walter Road Apt. 571, Turks and Caicos Islands',
             participants: 14,
             avatars: [avatar2, avatar3],
-            image: eventImage,
+            image: '/images/calendar-event-image.png',
             color: '#FFB347'
         },
         {
@@ -51,7 +51,7 @@ export default function Calendar() {
             location: '506 Satterfield Tunnel Apt. 963, San Marino',
             participants: 42,
             avatars: [avatar3],
-            image: eventImage,
+            image: '/images/calendar-event-image.png',
             color: '#2F80ED'
         }
     ]);

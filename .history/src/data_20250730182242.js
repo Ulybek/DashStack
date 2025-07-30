@@ -152,6 +152,7 @@ const data = {
     { image: `${import.meta.env.BASE_URL}images/womendress.png`, name: "Women's Dress", category: "Fashion", price: 640, piece: 635, colors: ["#800020", "#87CEEB", "#0000FF"] },
     { image: `${import.meta.env.BASE_URL}images/samsunga50.png`, name: "Samsung A50", category: "Mobile", price: 400, piece: 67, colors: ["#000080", "#000000", "#800020"] },
     { image: `${import.meta.env.BASE_URL}images/camera.png`, name: "Camera", category: "Electronic", price: 420, piece: 52, colors: ["#000080", "#800020", "#FF0000"] },
+    { image: `${import.meta.env.BASE_URL}images/applewatchseries4.png`, name: "Apple Watch Series 4", category: "Digital Product", price: 690, piece: 63, colors: ["#000000", "#C0C0C0", "#E0B0B0"] },
     { image: `${import.meta.env.BASE_URL}images/microsoftheadphones.png`, name: "Microsoft Headsquare", category: "Digital Product", price: 190, piece: 13, colors: ["#000000", "#FF99CC", "#6699FF", "#FFD700"] },
     { image: `${import.meta.env.BASE_URL}images/womendress.png`, name: "Women's Dress", category: "Fashion", price: 640, piece: 635, colors: ["#800020", "#87CEEB", "#0000FF"] },
     { image: `${import.meta.env.BASE_URL}images/samsunga50.png`, name: "Samsung A50", category: "Mobile", price: 400, piece: 67, colors: ["#000080", "#000000", "#800020"] },
